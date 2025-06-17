@@ -1,0 +1,296 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>3</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>GRE Tunnel</name>
+    <group>zscaler</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>Traffic Forwarding</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Source IP" name="params.source_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="primary_dest_vip_id" name="params.primary_dest_vip_id" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="vIP" name="params.primary_dest_vip_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="-" groupDisplayName="Primary Dest" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Private Service Edge" name="params.primary_dest_vip_private_service_edge" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="-" groupDisplayName="Primary Dest" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Datacenter" name="params.primary_dest_vip_datacenter" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Latitude" name="params.primary_dest_vip_latitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Longitude" name="params.primary_dest_vip_longitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="City" name="params.primary_dest_vip_city" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+      <values/>
+    </variable>
+    <variable displayName="primary_dest_vip_country_code" name="params.primary_dest_vip_country_code" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Region" name="params.primary_dest_vip_region" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Primary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="vIP" name="params.secondary_dest_vip_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Private Service Edge" name="params.secondary_dest_vip_private_service_edge" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Datacenter" name="params.secondary_dest_vip_datacenter" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Latitude" name="params.secondary_dest_vip_latitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Longitude" name="params.secondary_dest_vip_longitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="City" name="params.secondary_dest_vip_city" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="secondary_dest_vip_country_code" name="params.secondary_dest_vip_country_code" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Region" name="params.secondary_dest_vip_region" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="true" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Secondary Dest</sections>
+      </sections>
+    </variable>
+    <variable displayName="Last Modification" name="params.last_modification_time" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="last_modified_by_id" name="params.last_modified_by_id" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Modified By" name="params.last_modified_by_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Comment" name="params.comment" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="IP Unnumbered" name="params.ip_unnumbered" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>[
+    {
+        &quot;id&quot;: 4481450,
+        &quot;sourceIp&quot;: &quot;81.1.3.11&quot;,
+        &quot;primaryDestVip&quot;: {
+            &quot;id&quot;: 95035,
+            &quot;virtualIp&quot;: &quot;147.161.178.65&quot;,
+            &quot;privateServiceEdge&quot;: false,
+            &quot;datacenter&quot;: &quot;MRS1&quot;,
+            &quot;latitude&quot;: 43.0,
+            &quot;longitude&quot;: 5.0,
+            &quot;city&quot;: &quot;Marseille&quot;,
+            &quot;countryCode&quot;: &quot;FR  &quot;,
+            &quot;region&quot;: &quot;Europe&quot;
+        },
+        &quot;secondaryDestVip&quot;: {
+            &quot;id&quot;: 62606,
+            &quot;virtualIp&quot;: &quot;165.225.202.22&quot;,
+            &quot;privateServiceEdge&quot;: false,
+            &quot;datacenter&quot;: &quot;MIL3&quot;,
+            &quot;latitude&quot;: 45.0,
+            &quot;longitude&quot;: 9.0,
+            &quot;city&quot;: &quot;Milan&quot;,
+            &quot;countryCode&quot;: &quot;IT  &quot;,
+            &quot;region&quot;: &quot;Europe&quot;
+        },
+        &quot;lastModificationTime&quot;: 1746525195,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 134961959,
+            &quot;name&quot;: &quot;Herve Admin&quot;
+        },
+        &quot;comment&quot;: &quot;SASE OPS LAB Cisco IOS XE EDGE 1 GRE&quot;,
+        &quot;ipUnnumbered&quot;: true
+    }
+]
+</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$.*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;source_ip&gt;.*)$@</regexp>
+          <xpath>$.sourceIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_id&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_ip&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.virtualIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_private_service_edge&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.privateServiceEdge</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_datacenter&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.datacenter</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_latitude&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.latitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_longitude&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.longitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_city&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.city</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_country_code&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.countryCode</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_region&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.region</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_id&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_ip&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.virtualIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_private_service_edge&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.privateServiceEdge</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_datacenter&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.datacenter</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_latitude&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.latitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_longitude&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.longitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_city&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.city</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_country_code&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.countryCode</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_region&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.region</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;last_modification_time&gt;.*)$@</regexp>
+          <xpath>$.lastModificationTime</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;last_modified_by_id&gt;.*)$@</regexp>
+          <xpath>$.lastModifiedBy.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;last_modified_by_name&gt;.*)$@</regexp>
+          <xpath>$.lastModifiedBy.name</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;comment&gt;.*)$@</regexp>
+          <xpath>$.comment</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;ip_unnumbered&gt;.*)$@</regexp>
+          <xpath>$.ipUnnumbered</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/zia/api/v1/greTunnels</xpath>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[{literal}{{/literal}
+  "sourceIp": "{$params.source_ip}",
+  "primaryDestVip": "{$params.primary_dest_vip_ip}",
+  "secondaryDestVip": "{$params.secondary_dest_vip_ip}",
+  "ipUnnumbered": {$params.ip_unnumbered|json_encode},
+  "comment": "{$params.comment}",
+  "withinCountry": {$params.within_country|default:false|json_encode},
+  "subcloud": "{$params.subcloud}"
+{literal}}{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/zia/api/v1/greTunnels</xpath>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE"/>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE"/>
+  <command name="LIST"/>
+  <displayName>GRE Tunnel</displayName>
+  <order>3</order>
+</ObjectDefinition>

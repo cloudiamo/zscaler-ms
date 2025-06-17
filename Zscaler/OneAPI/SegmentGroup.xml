@@ -1,0 +1,490 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>name</displayField>
+    <order>1</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>Segment Group</name>
+    <group>Default</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="300" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Enabled" name="params.enabled" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="true" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="App Segment" name="params.application_segment.0.id" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="4" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>Application_Segments</class>
+      </classes>
+    </variable>
+    <variable displayName="Application Segments Name" name="params.application_segment.0.name" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>Application_Segments</class>
+      </classes>
+    </variable>
+  </variables>
+  <example>
+    <content>{
+    &quot;totalPages&quot;: &quot;1&quot;,
+    &quot;totalCount&quot;: &quot;2&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;id&quot;: &quot;144120298013196429&quot;,
+            &quot;modifiedTime&quot;: &quot;1749651758&quot;,
+            &quot;creationTime&quot;: &quot;1749651758&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196427&quot;,
+            &quot;name&quot;: &quot;SASEOpsLabSegmentGroup001&quot;,
+            &quot;enabled&quot;: true,
+            &quot;applications&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196431&quot;,
+                    &quot;modifiedTime&quot;: &quot;1749651758&quot;,
+                    &quot;creationTime&quot;: &quot;1749651758&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196427&quot;,
+                    &quot;name&quot;: &quot;SASEOpsLabSegment001&quot;,
+                    &quot;domainName&quot;: &quot;www.sase-opslan.com&quot;,
+                    &quot;domainNames&quot;: [
+                        &quot;www.sase-opslan.com&quot;,
+                        &quot;10.101.1.1&quot;
+                    ],
+                    &quot;enabled&quot;: true,
+                    &quot;passiveHealthEnabled&quot;: true,
+                    &quot;tcpPortRanges&quot;: [
+                        &quot;80&quot;,
+                        &quot;80&quot;,
+                        &quot;443&quot;,
+                        &quot;443&quot;,
+                        &quot;8080&quot;,
+                        &quot;8080&quot;
+                    ],
+                    &quot;udpPortRanges&quot;: [
+                        &quot;1234&quot;,
+                        &quot;1236&quot;
+                    ],
+                    &quot;doubleEncrypt&quot;: false,
+                    &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+                    &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+                    &quot;bypassType&quot;: &quot;NEVER&quot;,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;ipAnchored&quot;: false,
+                    &quot;bypassOnReauth&quot;: false,
+                    &quot;inspectTrafficWithZia&quot;: false,
+                    &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+                    &quot;useInDrMode&quot;: false,
+                    &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+                    &quot;selectConnectorCloseToApp&quot;: false,
+                    &quot;weightedLoadBalancing&quot;: false,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;adpEnabled&quot;: false,
+                    &quot;apiProtectionEnabled&quot;: false,
+                    &quot;autoAppProtectEnabled&quot;: false,
+                    &quot;fqdnDnsCheck&quot;: false,
+                    &quot;tcpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;80&quot;,
+                            &quot;to&quot;: &quot;80&quot;
+                        },
+                        {
+                            &quot;from&quot;: &quot;443&quot;,
+                            &quot;to&quot;: &quot;443&quot;
+                        },
+                        {
+                            &quot;from&quot;: &quot;8080&quot;,
+                            &quot;to&quot;: &quot;8080&quot;
+                        }
+                    ],
+                    &quot;udpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;1234&quot;,
+                            &quot;to&quot;: &quot;1236&quot;
+                        }
+                    ]
+                }
+            ],
+            &quot;policyMigrated&quot;: true,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;tcpKeepAliveEnabled&quot;: &quot;0&quot;,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;
+        },
+        {
+            &quot;id&quot;: &quot;144120298013196375&quot;,
+            &quot;creationTime&quot;: &quot;1661785561&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;name&quot;: &quot;Skytap SKOFY23 Segment Group&quot;,
+            &quot;enabled&quot;: true,
+            &quot;applications&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196401&quot;,
+                    &quot;creationTime&quot;: &quot;1664268261&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196394&quot;,
+                    &quot;name&quot;: &quot;SAP GUI&quot;,
+                    &quot;domainName&quot;: &quot;sapgui.renault.fr&quot;,
+                    &quot;domainNames&quot;: [
+                        &quot;sapgui.renault.fr&quot;
+                    ],
+                    &quot;enabled&quot;: true,
+                    &quot;passiveHealthEnabled&quot;: true,
+                    &quot;tcpPortRanges&quot;: [
+                        &quot;80&quot;,
+                        &quot;80&quot;
+                    ],
+                    &quot;doubleEncrypt&quot;: false,
+                    &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+                    &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+                    &quot;bypassType&quot;: &quot;NEVER&quot;,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;ipAnchored&quot;: false,
+                    &quot;bypassOnReauth&quot;: false,
+                    &quot;inspectTrafficWithZia&quot;: false,
+                    &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+                    &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+                    &quot;selectConnectorCloseToApp&quot;: false,
+                    &quot;weightedLoadBalancing&quot;: false,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;apiProtectionEnabled&quot;: false,
+                    &quot;autoAppProtectEnabled&quot;: false,
+                    &quot;fqdnDnsCheck&quot;: false,
+                    &quot;tcpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;80&quot;,
+                            &quot;to&quot;: &quot;80&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196315&quot;,
+                    &quot;modifiedTime&quot;: &quot;1664465335&quot;,
+                    &quot;creationTime&quot;: &quot;1601371961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;bdequivre.com Wildcard&quot;,
+                    &quot;domainName&quot;: &quot;.bdequivre.com&quot;,
+                    &quot;domainNames&quot;: [
+                        &quot;.bdequivre.com&quot;
+                    ],
+                    &quot;enabled&quot;: false,
+                    &quot;passiveHealthEnabled&quot;: true,
+                    &quot;tcpPortRanges&quot;: [
+                        &quot;1&quot;,
+                        &quot;52&quot;,
+                        &quot;54&quot;,
+                        &quot;65535&quot;
+                    ],
+                    &quot;udpPortRanges&quot;: [
+                        &quot;1&quot;,
+                        &quot;52&quot;,
+                        &quot;54&quot;,
+                        &quot;65535&quot;
+                    ],
+                    &quot;doubleEncrypt&quot;: false,
+                    &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+                    &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+                    &quot;bypassType&quot;: &quot;NEVER&quot;,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;ipAnchored&quot;: false,
+                    &quot;bypassOnReauth&quot;: false,
+                    &quot;inspectTrafficWithZia&quot;: false,
+                    &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+                    &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+                    &quot;selectConnectorCloseToApp&quot;: false,
+                    &quot;weightedLoadBalancing&quot;: false,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;apiProtectionEnabled&quot;: false,
+                    &quot;autoAppProtectEnabled&quot;: false,
+                    &quot;fqdnDnsCheck&quot;: false,
+                    &quot;tcpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;1&quot;,
+                            &quot;to&quot;: &quot;52&quot;
+                        },
+                        {
+                            &quot;from&quot;: &quot;54&quot;,
+                            &quot;to&quot;: &quot;65535&quot;
+                        }
+                    ],
+                    &quot;udpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;1&quot;,
+                            &quot;to&quot;: &quot;52&quot;
+                        },
+                        {
+                            &quot;from&quot;: &quot;54&quot;,
+                            &quot;to&quot;: &quot;65535&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196377&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786626&quot;,
+                    &quot;creationTime&quot;: &quot;1661785561&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;DVWA&quot;,
+                    &quot;domainName&quot;: &quot;bvwa.bdequivre.com&quot;,
+                    &quot;domainNames&quot;: [
+                        &quot;bvwa.bdequivre.com&quot;,
+                        &quot;10.0.0.2&quot;
+                    ],
+                    &quot;enabled&quot;: true,
+                    &quot;passiveHealthEnabled&quot;: true,
+                    &quot;tcpPortRanges&quot;: [
+                        &quot;8000&quot;,
+                        &quot;8000&quot;
+                    ],
+                    &quot;doubleEncrypt&quot;: false,
+                    &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+                    &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+                    &quot;bypassType&quot;: &quot;NEVER&quot;,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;ipAnchored&quot;: false,
+                    &quot;bypassOnReauth&quot;: false,
+                    &quot;inspectTrafficWithZia&quot;: false,
+                    &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+                    &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+                    &quot;selectConnectorCloseToApp&quot;: false,
+                    &quot;weightedLoadBalancing&quot;: false,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;apiProtectionEnabled&quot;: false,
+                    &quot;autoAppProtectEnabled&quot;: false,
+                    &quot;fqdnDnsCheck&quot;: false,
+                    &quot;tcpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;8000&quot;,
+                            &quot;to&quot;: &quot;8000&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196379&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786741&quot;,
+                    &quot;creationTime&quot;: &quot;1661785849&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;SuiteCRM&quot;,
+                    &quot;domainName&quot;: &quot;suitecrm.bdequivre.com&quot;,
+                    &quot;domainNames&quot;: [
+                        &quot;suitecrm.bdequivre.com&quot;,
+                        &quot;10.0.0.2&quot;
+                    ],
+                    &quot;enabled&quot;: true,
+                    &quot;passiveHealthEnabled&quot;: true,
+                    &quot;tcpPortRanges&quot;: [
+                        &quot;8001&quot;,
+                        &quot;8001&quot;
+                    ],
+                    &quot;doubleEncrypt&quot;: false,
+                    &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+                    &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+                    &quot;bypassType&quot;: &quot;NEVER&quot;,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;ipAnchored&quot;: false,
+                    &quot;bypassOnReauth&quot;: false,
+                    &quot;inspectTrafficWithZia&quot;: false,
+                    &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+                    &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+                    &quot;selectConnectorCloseToApp&quot;: false,
+                    &quot;weightedLoadBalancing&quot;: false,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;apiProtectionEnabled&quot;: false,
+                    &quot;autoAppProtectEnabled&quot;: false,
+                    &quot;fqdnDnsCheck&quot;: false,
+                    &quot;tcpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;8001&quot;,
+                            &quot;to&quot;: &quot;8001&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196380&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786708&quot;,
+                    &quot;creationTime&quot;: &quot;1661785924&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;OwnCloud&quot;,
+                    &quot;domainName&quot;: &quot;owncloud.bdequivre.com&quot;,
+                    &quot;domainNames&quot;: [
+                        &quot;owncloud.bdequivre.com&quot;,
+                        &quot;10.0.0.2&quot;
+                    ],
+                    &quot;enabled&quot;: true,
+                    &quot;passiveHealthEnabled&quot;: true,
+                    &quot;tcpPortRanges&quot;: [
+                        &quot;8002&quot;,
+                        &quot;8002&quot;
+                    ],
+                    &quot;doubleEncrypt&quot;: false,
+                    &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+                    &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+                    &quot;bypassType&quot;: &quot;NEVER&quot;,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;ipAnchored&quot;: false,
+                    &quot;bypassOnReauth&quot;: false,
+                    &quot;inspectTrafficWithZia&quot;: false,
+                    &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+                    &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+                    &quot;selectConnectorCloseToApp&quot;: false,
+                    &quot;weightedLoadBalancing&quot;: false,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;apiProtectionEnabled&quot;: false,
+                    &quot;autoAppProtectEnabled&quot;: false,
+                    &quot;fqdnDnsCheck&quot;: false,
+                    &quot;tcpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;8002&quot;,
+                            &quot;to&quot;: &quot;8002&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196381&quot;,
+                    &quot;modifiedTime&quot;: &quot;1719310117&quot;,
+                    &quot;creationTime&quot;: &quot;1661786042&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;GitLab&quot;,
+                    &quot;domainName&quot;: &quot;gitlab.bdequivre.com&quot;,
+                    &quot;domainNames&quot;: [
+                        &quot;gitlab.bdequivre.com&quot;,
+                        &quot;10.0.0.2&quot;
+                    ],
+                    &quot;enabled&quot;: true,
+                    &quot;passiveHealthEnabled&quot;: true,
+                    &quot;tcpPortRanges&quot;: [
+                        &quot;8003&quot;,
+                        &quot;8003&quot;
+                    ],
+                    &quot;doubleEncrypt&quot;: false,
+                    &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+                    &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+                    &quot;bypassType&quot;: &quot;NEVER&quot;,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;ipAnchored&quot;: false,
+                    &quot;bypassOnReauth&quot;: false,
+                    &quot;inspectTrafficWithZia&quot;: false,
+                    &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+                    &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+                    &quot;selectConnectorCloseToApp&quot;: false,
+                    &quot;weightedLoadBalancing&quot;: false,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;adpEnabled&quot;: false,
+                    &quot;apiProtectionEnabled&quot;: false,
+                    &quot;autoAppProtectEnabled&quot;: false,
+                    &quot;fqdnDnsCheck&quot;: false,
+                    &quot;tcpPortRange&quot;: [
+                        {
+                            &quot;from&quot;: &quot;8003&quot;,
+                            &quot;to&quot;: &quot;8003&quot;
+                        }
+                    ]
+                }
+            ],
+            &quot;policyMigrated&quot;: true,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;tcpKeepAliveEnabled&quot;: &quot;0&quot;,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;
+        }
+    ]
+}
+</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$[&apos;list&apos;].*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.[&apos;id&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;name&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;enabled&gt;.*)$@</regexp>
+          <xpath>$.[&apos;enabled&apos;]</xpath>
+        </line>
+        <line>
+          <array name="application_segment">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+                <xpath>$.[&apos;name&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.applications.*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/segmentGroup</xpath>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "name": "{$params.name}",
+  "enabled": {$params.enabled}{if !$params.enabled}0{/if},
+  "applications": [
+   {foreach $params.application_segment as $appsegment}
+      {literal}{{/literal}
+      "id":"{$appsegment.id}",
+      "name":"{$Application_Segments.{$appsegment.id}.name}"
+      {literal}}{/literal}{if !$appsegment@last},{/if}
+   {/foreach}
+  ]
+{literal}}
+{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/segmentGroup</xpath>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "name": "{$params.name}",
+  "enabled": {$params.enabled}{if !$params.enabled}0{/if},
+  "applications": [
+   {foreach $params.application_segment as $appsegment}
+      {literal}{{/literal}
+      "id":"{$appsegment.id}",
+      "name":"{$Application_Segments.{$appsegment.id}.name}"
+      {literal}}{/literal}{if !$appsegment@last},{/if}
+   {/foreach}
+  ]
+{literal}}
+{/literal}
+]]></operation>
+    <rest>PUT</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/segmentGroup/{$params.object_id}</xpath>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <rest>DELETE</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/segmentGroup/{$params.object_id}</xpath>
+  </command>
+  <command name="LIST"/>
+  <displayName>Segment Group</displayName>
+  <order>1</order>
+</ObjectDefinition>

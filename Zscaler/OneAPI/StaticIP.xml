@@ -1,0 +1,214 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>ip_address</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>Static IP</name>
+    <group>zscaler</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>Traffic Forwarding</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="IP Address" name="params.ip_address" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="130" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Geo Override" name="params.geo_override" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="true" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Latitude" name="params.latitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="45.1766" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Longitude" name="params.longitude" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="5.7205" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="city_id" name="params.city_id" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="City" name="params.city_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Routable IP" name="params.routable_ip" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="true" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Last Modified" name="params.last_modification_time" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="last_modified_by_id" name="params.last_modified_by_id" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Last Modified By" name="params.last_modified_by_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Description" name="params.comment" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>[
+    {
+        &quot;id&quot;: 4494696,
+        &quot;ipAddress&quot;: &quot;10.101.1.1&quot;,
+        &quot;geoOverride&quot;: true,
+        &quot;latitude&quot;: 48.8322999,
+        &quot;longitude&quot;: 2.4075,
+        &quot;city&quot;: {
+            &quot;id&quot;: 2988507,
+            &quot;name&quot;: &quot;Paris, \u00cele-de-France, France&quot;
+        },
+        &quot;routableIP&quot;: true,
+        &quot;lastModificationTime&quot;: 1747217288,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 134961959,
+            &quot;name&quot;: &quot;Herve Admin&quot;
+        },
+        &quot;comment&quot;: &quot;hgu001&quot;
+    },
+    {
+        &quot;id&quot;: 4481450,
+        &quot;ipAddress&quot;: &quot;81.1.3.11&quot;,
+        &quot;geoOverride&quot;: true,
+        &quot;latitude&quot;: 45.1766,
+        &quot;longitude&quot;: 5.7205,
+        &quot;city&quot;: {
+            &quot;id&quot;: 3014728,
+            &quot;name&quot;: &quot;Grenoble, Auvergne-Rhone-Alpes, France&quot;
+        },
+        &quot;routableIP&quot;: true,
+        &quot;lastModificationTime&quot;: 1746525195,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 134961959,
+            &quot;name&quot;: &quot;Herve Admin&quot;
+        },
+        &quot;comment&quot;: &quot;SASE OPS LAB Cisco IOS XE EDGE 1 GRE&quot;
+    },
+    {
+        &quot;id&quot;: 314980,
+        &quot;ipAddress&quot;: &quot;78.198.155.97&quot;,
+        &quot;geoOverride&quot;: false,
+        &quot;latitude&quot;: 48.8954,
+        &quot;longitude&quot;: 2.2574,
+        &quot;city&quot;: {
+            &quot;id&quot;: 3023141,
+            &quot;name&quot;: &quot;Courbevoie, \u00cele-de-France, France&quot;
+        },
+        &quot;routableIP&quot;: true,
+        &quot;lastModificationTime&quot;: 1657696016,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 309323,
+            &quot;name&quot;: &quot;DEFAULT ADMIN (Deprecated)&quot;
+        },
+        &quot;comment&quot;: &quot;Free Fibre&quot;
+    },
+    {
+        &quot;id&quot;: 54965,
+        &quot;ipAddress&quot;: &quot;79.94.60.106&quot;,
+        &quot;geoOverride&quot;: false,
+        &quot;latitude&quot;: 48.88,
+        &quot;longitude&quot;: 2.2454,
+        &quot;city&quot;: {
+            &quot;id&quot;: 2985034,
+            &quot;name&quot;: &quot;Puteaux, \u00cele-de-France, France&quot;
+        },
+        &quot;routableIP&quot;: true,
+        &quot;lastModificationTime&quot;: 0
+    }
+]
+</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$.*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;ip_address&gt;.*)$@</regexp>
+          <xpath>$.ipAddress</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;geo_override&gt;.*)$@</regexp>
+          <xpath>$.geoOverride</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;latitude&gt;.*)$@</regexp>
+          <xpath>$.latitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;longitude&gt;.*)$@</regexp>
+          <xpath>$.longitude</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;city_id&gt;.*)$@</regexp>
+          <xpath>$.city.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;city_name&gt;.*)$@</regexp>
+          <xpath>$.city.name</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;routable_ip&gt;.*)$@</regexp>
+          <xpath>$.routableIP</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;last_modification_time&gt;.*)$@</regexp>
+          <xpath>$.lastModificationTime</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;last_modified_by_id&gt;.*)$@</regexp>
+          <xpath>$.lastModifiedBy.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;last_modified_by_name&gt;.*)$@</regexp>
+          <xpath>$.lastModifiedBy.name</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;comment&gt;.*)$@</regexp>
+          <xpath>$.comment</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/zia/api/v1/staticIP</xpath>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "ipAddress": "{$params.ip_address}",
+  "geoOverride": true,
+  "latitude": "{$params.latitude}",
+  "longitude": "{$params.longitude}",
+  "routableIP": true,
+  "comment": "{$params.comment}"
+{literal}}
+{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/zia/api/v1/staticIP</xpath>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "ipAddress": "{$params.ip_address}",
+  "geoOverride": true,
+  "latitude": "{$params.latitude}",
+  "longitude": "{$params.longitude}",
+  "routableIP": true,
+  "comment": "{$params.comment}"
+{literal}}
+{/literal}]]></operation>
+    <rest>PUT</rest>
+    <xpath>/zia/api/v1/staticIP/{$params.object_id}</xpath>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <rest>DELETE</rest>
+    <xpath>/zia/api/v1/staticIP/{$params.object_id}</xpath>
+  </command>
+  <command name="LIST"/>
+  <displayName>Static IP</displayName>
+  <order>0</order>
+</ObjectDefinition>

@@ -1,0 +1,292 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>name</displayField>
+    <order>3</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>App Connector Groups</name>
+    <group>zscaler|ZPA</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Connectors Id" name="params.connectors.0.id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Connectors Name" name="params.connectors.0.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>{
+    &quot;totalPages&quot;: &quot;1&quot;,
+    &quot;totalCount&quot;: &quot;4&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;id&quot;: &quot;144120298013196410&quot;,
+            &quot;creationTime&quot;: &quot;1682685495&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196407&quot;,
+            &quot;name&quot;: &quot;Cloudi-Fi - IoT&quot;,
+            &quot;enabled&quot;: true,
+            &quot;versionProfileId&quot;: &quot;0&quot;,
+            &quot;overrideVersionProfile&quot;: false,
+            &quot;versionProfileName&quot;: &quot;Default&quot;,
+            &quot;upgradePriority&quot;: &quot;WEEK&quot;,
+            &quot;versionProfileVisibilityScope&quot;: &quot;ALL&quot;,
+            &quot;upgradeTimeInSecs&quot;: &quot;79200&quot;,
+            &quot;upgradeDay&quot;: &quot;SATURDAY&quot;,
+            &quot;location&quot;: &quot;Paris, France&quot;,
+            &quot;latitude&quot;: &quot;48.856614&quot;,
+            &quot;longitude&quot;: &quot;2.3522219&quot;,
+            &quot;dnsQueryType&quot;: &quot;IPV4&quot;,
+            &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+            &quot;countryCode&quot;: &quot;FR&quot;,
+            &quot;tcpQuickAckApp&quot;: true,
+            &quot;tcpQuickAckAssistant&quot;: true,
+            &quot;tcpQuickAckReadAssistant&quot;: true,
+            &quot;praEnabled&quot;: false,
+            &quot;useInDrMode&quot;: false,
+            &quot;connectorGroupType&quot;: &quot;APP&quot;,
+            &quot;wafDisabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;lssAppConnectorGroup&quot;: false
+        },
+        {
+            &quot;id&quot;: &quot;144120298013196370&quot;,
+            &quot;creationTime&quot;: &quot;1661777961&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;name&quot;: &quot;PRA App Connector Group&quot;,
+            &quot;enabled&quot;: true,
+            &quot;versionProfileId&quot;: &quot;0&quot;,
+            &quot;overrideVersionProfile&quot;: false,
+            &quot;versionProfileName&quot;: &quot;Default&quot;,
+            &quot;upgradePriority&quot;: &quot;WEEK&quot;,
+            &quot;versionProfileVisibilityScope&quot;: &quot;ALL&quot;,
+            &quot;upgradeTimeInSecs&quot;: &quot;79200&quot;,
+            &quot;upgradeDay&quot;: &quot;SUNDAY&quot;,
+            &quot;location&quot;: &quot;Paris, France&quot;,
+            &quot;latitude&quot;: &quot;48.856614&quot;,
+            &quot;longitude&quot;: &quot;2.3522219&quot;,
+            &quot;dnsQueryType&quot;: &quot;IPV4_IPV6&quot;,
+            &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+            &quot;countryCode&quot;: &quot;FR&quot;,
+            &quot;praEnabled&quot;: true,
+            &quot;connectorGroupType&quot;: &quot;APP&quot;,
+            &quot;wafDisabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;connectors&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196372&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661779260&quot;,
+                    &quot;creationTime&quot;: &quot;1661779260&quot;,
+                    &quot;modifiedBy&quot;: &quot;-2&quot;,
+                    &quot;name&quot;: &quot;PRA Provisioning Key-1661779260587&quot;,
+                    &quot;fingerprint&quot;: &quot;1ggQfa9YP+IMdlz2dtILxSwo0AZFJps0eKkmkmkMKNM=&quot;,
+                    &quot;issuedCertId&quot;: &quot;2143882&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;connectorType&quot;: &quot;APP&quot;,
+                    &quot;assistantVersion&quot;: {
+                        &quot;id&quot;: &quot;144120298013196372&quot;,
+                        &quot;modifiedTime&quot;: &quot;1681900730&quot;,
+                        &quot;creationTime&quot;: &quot;1661779265&quot;,
+                        &quot;modifiedBy&quot;: &quot;72057594037928156&quot;,
+                        &quot;expectedVersion&quot;: &quot;22.385.3&quot;,
+                        &quot;currentVersion&quot;: &quot;22.385.3&quot;,
+                        &quot;systemStartTime&quot;: &quot;1681865745&quot;,
+                        &quot;applicationStartTime&quot;: &quot;1681892925&quot;,
+                        &quot;lastBrokerConnectTime&quot;: &quot;1681892925157417&quot;,
+                        &quot;lastBrokerDisconnectTime&quot;: &quot;1681900730436681&quot;,
+                        &quot;brokerId&quot;: &quot;72057594037929459&quot;,
+                        &quot;restartTimeInSec&quot;: &quot;0&quot;,
+                        &quot;platform&quot;: &quot;el7&quot;,
+                        &quot;upgradeStatus&quot;: &quot;COMPLETE&quot;,
+                        &quot;ctrlChannelStatus&quot;: &quot;ZPN_STATUS_DISCONNECTED&quot;,
+                        &quot;latitude&quot;: &quot;48.856614&quot;,
+                        &quot;longitude&quot;: &quot;2.3522219&quot;,
+                        &quot;privateIp&quot;: &quot;10.0.0.3&quot;,
+                        &quot;publicIp&quot;: &quot;185.64.245.52&quot;,
+                        &quot;loneWarrior&quot;: true,
+                        &quot;mtunnelId&quot;: &quot;kPUxUOtiuODi1WaOZp9Q&quot;,
+                        &quot;previousVersion&quot;: &quot;22.385.2&quot;,
+                        &quot;lastUpgradedTime&quot;: &quot;1681892925&quot;,
+                        &quot;upgradeNowOnce&quot;: false,
+                        &quot;upgradeAttempt&quot;: &quot;0&quot;,
+                        &quot;sargeVersion&quot;: &quot;22.31.1&quot;,
+                        &quot;platformDetail&quot;: &quot;ESXi&quot;,
+                        &quot;osUpgradeEnabled&quot;: false,
+                        &quot;appConnectorGroupId&quot;: &quot;144120298013196370&quot;
+                    },
+                    &quot;upgradeAttempt&quot;: &quot;0&quot;,
+                    &quot;provisioningKeyId&quot;: &quot;20359&quot;
+                }
+            ],
+            &quot;lssAppConnectorGroup&quot;: false
+        },
+        {
+            &quot;id&quot;: &quot;144120298013196292&quot;,
+            &quot;modifiedTime&quot;: &quot;1611094172&quot;,
+            &quot;creationTime&quot;: &quot;1480663896&quot;,
+            &quot;modifiedBy&quot;: &quot;72057594037928187&quot;,
+            &quot;name&quot;: &quot;Skytap connector group&quot;,
+            &quot;enabled&quot;: true,
+            &quot;versionProfileId&quot;: &quot;0&quot;,
+            &quot;overrideVersionProfile&quot;: false,
+            &quot;versionProfileName&quot;: &quot;Default&quot;,
+            &quot;upgradePriority&quot;: &quot;WEEK&quot;,
+            &quot;versionProfileVisibilityScope&quot;: &quot;ALL&quot;,
+            &quot;upgradeTimeInSecs&quot;: &quot;28800&quot;,
+            &quot;upgradeDay&quot;: &quot;SATURDAY&quot;,
+            &quot;location&quot;: &quot;Paris, France&quot;,
+            &quot;latitude&quot;: &quot;48.85661400000001&quot;,
+            &quot;longitude&quot;: &quot;2.3522219&quot;,
+            &quot;dnsQueryType&quot;: &quot;IPV4_IPV6&quot;,
+            &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+            &quot;countryCode&quot;: &quot;FR&quot;,
+            &quot;praEnabled&quot;: true,
+            &quot;connectorGroupType&quot;: &quot;APP&quot;,
+            &quot;wafDisabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;lssAppConnectorGroup&quot;: false
+        },
+        {
+            &quot;id&quot;: &quot;144120298013196371&quot;,
+            &quot;creationTime&quot;: &quot;1661778053&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;name&quot;: &quot;Skytap SKOFY23 Connector Group&quot;,
+            &quot;enabled&quot;: true,
+            &quot;versionProfileId&quot;: &quot;0&quot;,
+            &quot;overrideVersionProfile&quot;: false,
+            &quot;versionProfileName&quot;: &quot;Default&quot;,
+            &quot;upgradePriority&quot;: &quot;WEEK&quot;,
+            &quot;versionProfileVisibilityScope&quot;: &quot;ALL&quot;,
+            &quot;upgradeTimeInSecs&quot;: &quot;79200&quot;,
+            &quot;upgradeDay&quot;: &quot;SUNDAY&quot;,
+            &quot;location&quot;: &quot;Paris, France&quot;,
+            &quot;latitude&quot;: &quot;48.856614&quot;,
+            &quot;longitude&quot;: &quot;2.3522219&quot;,
+            &quot;dnsQueryType&quot;: &quot;IPV4_IPV6&quot;,
+            &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+            &quot;countryCode&quot;: &quot;FR&quot;,
+            &quot;praEnabled&quot;: true,
+            &quot;connectorGroupType&quot;: &quot;APP&quot;,
+            &quot;wafDisabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;connectors&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196373&quot;,
+                    &quot;modifiedTime&quot;: &quot;1664180753&quot;,
+                    &quot;creationTime&quot;: &quot;1661780232&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;SKYTAP SKOFY23 01&quot;,
+                    &quot;fingerprint&quot;: &quot;K2O2x7vyxE8ZR8ndeWLQLnsItWXy8DfUsH8UdAQWLiY=&quot;,
+                    &quot;issuedCertId&quot;: &quot;2144265&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;connectorType&quot;: &quot;APP&quot;,
+                    &quot;assistantVersion&quot;: {
+                        &quot;id&quot;: &quot;144120298013196373&quot;,
+                        &quot;modifiedTime&quot;: &quot;1679941680&quot;,
+                        &quot;creationTime&quot;: &quot;1661780237&quot;,
+                        &quot;modifiedBy&quot;: &quot;72057594037928156&quot;,
+                        &quot;expectedVersion&quot;: &quot;22.385.3&quot;,
+                        &quot;currentVersion&quot;: &quot;22.385.2&quot;,
+                        &quot;systemStartTime&quot;: &quot;1679916927&quot;,
+                        &quot;applicationStartTime&quot;: &quot;1679917036&quot;,
+                        &quot;lastBrokerConnectTime&quot;: &quot;1679917036511798&quot;,
+                        &quot;lastBrokerDisconnectTime&quot;: &quot;1679941680283296&quot;,
+                        &quot;brokerId&quot;: &quot;72057594037928499&quot;,
+                        &quot;restartTimeInSec&quot;: &quot;1680472800&quot;,
+                        &quot;platform&quot;: &quot;el7&quot;,
+                        &quot;upgradeStatus&quot;: &quot;IN_PROGRESS&quot;,
+                        &quot;ctrlChannelStatus&quot;: &quot;ZPN_STATUS_DISCONNECTED&quot;,
+                        &quot;latitude&quot;: &quot;48.856614&quot;,
+                        &quot;longitude&quot;: &quot;2.3522219&quot;,
+                        &quot;privateIp&quot;: &quot;172.18.0.2&quot;,
+                        &quot;publicIp&quot;: &quot;185.64.245.50&quot;,
+                        &quot;loneWarrior&quot;: true,
+                        &quot;mtunnelId&quot;: &quot;mgQaVywOgPN1+InDDHQU&quot;,
+                        &quot;previousVersion&quot;: &quot;22.284.3&quot;,
+                        &quot;lastUpgradedTime&quot;: &quot;1675846394&quot;,
+                        &quot;upgradeNowOnce&quot;: false,
+                        &quot;upgradeAttempt&quot;: &quot;1&quot;,
+                        &quot;sargeVersion&quot;: &quot;22.184.1&quot;,
+                        &quot;platformDetail&quot;: &quot;Docker&quot;,
+                        &quot;osUpgradeEnabled&quot;: false,
+                        &quot;appConnectorGroupId&quot;: &quot;144120298013196371&quot;
+                    },
+                    &quot;upgradeAttempt&quot;: &quot;0&quot;,
+                    &quot;provisioningKeyId&quot;: &quot;20360&quot;
+                }
+            ],
+            &quot;lssAppConnectorGroup&quot;: false
+        }
+    ]
+}</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$[&apos;list&apos;].*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.[&apos;id&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;name&apos;]</xpath>
+        </line>
+        <line>
+          <array name="connectors">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;id&gt;.*)$@</regexp>
+                <xpath>$.[&apos;id&apos;]</xpath>
+              </line>
+              <line>
+                <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+                <xpath>$.[&apos;name&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.connectors.*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/appConnectorGroup</xpath>
+  </command>
+  <command name="CREATE"/>
+  <command name="READ"/>
+  <command name="UPDATE"/>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE"/>
+  <command name="LIST"/>
+  <displayName>App Connector Groups</displayName>
+  <order>3</order>
+</ObjectDefinition>

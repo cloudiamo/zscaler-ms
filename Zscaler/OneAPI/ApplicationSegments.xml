@@ -1,0 +1,958 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>name</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>Application Segments</name>
+    <group>zscaler</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="SASEOpsLabSegment002" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Domain Name" name="params.domain_names.0.domain" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Server Group ID" name="params.server_groups.0.id" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>Server_Group</class>
+      </classes>
+    </variable>
+    <variable displayName="Server Group Name" name="params.server_groups.0.name" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>Server_Group</class>
+      </classes>
+    </variable>
+    <variable displayName="Segment Group ID" name="params.segment_group_id" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>Segment_Group</class>
+      </classes>
+    </variable>
+    <variable displayName="Segment Group Name" name="params.segment_group_name" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>Segment_Group</class>
+      </classes>
+    </variable>
+    <variable displayName="TCP from" name="params.tcp_port_range.0.from" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="to" name="params.tcp_port_range.0.to" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="UDP from" name="params.udp_port_range.0.from" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="to" name="params.udp_port_range.0.to" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>{
+    &quot;totalPages&quot;: &quot;1&quot;,
+    &quot;totalCount&quot;: &quot;10&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;modifiedTime&quot;: &quot;1664465335&quot;,
+            &quot;creationTime&quot;: &quot;1601371961&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196315&quot;,
+            &quot;domainNames&quot;: [
+                &quot;*.bdequivre.com&quot;
+            ],
+            &quot;name&quot;: &quot;bdequivre.com Wildcard&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196314&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786484&quot;,
+                    &quot;creationTime&quot;: &quot;1601371961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: true
+                }
+            ],
+            &quot;enabled&quot;: false,
+            &quot;passiveHealthEnabled&quot;: true,
+            &quot;tcpPortRanges&quot;: [
+                &quot;1&quot;,
+                &quot;52&quot;,
+                &quot;54&quot;,
+                &quot;65535&quot;
+            ],
+            &quot;udpPortRanges&quot;: [
+                &quot;1&quot;,
+                &quot;52&quot;,
+                &quot;54&quot;,
+                &quot;65535&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;1&quot;,
+                    &quot;to&quot;: &quot;52&quot;
+                },
+                {
+                    &quot;from&quot;: &quot;54&quot;,
+                    &quot;to&quot;: &quot;65535&quot;
+                }
+            ],
+            &quot;udpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;1&quot;,
+                    &quot;to&quot;: &quot;52&quot;
+                },
+                {
+                    &quot;from&quot;: &quot;54&quot;,
+                    &quot;to&quot;: &quot;65535&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;ON_ACCESS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;selectConnectorCloseToApp&quot;: false,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;segmentGroupId&quot;: &quot;144120298013196375&quot;,
+            &quot;segmentGroupName&quot;: &quot;Skytap SKOFY23 Segment Group&quot;
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1661786626&quot;,
+            &quot;creationTime&quot;: &quot;1661785561&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196377&quot;,
+            &quot;domainNames&quot;: [
+                &quot;bvwa.bdequivre.com&quot;,
+                &quot;10.0.0.2&quot;
+            ],
+            &quot;name&quot;: &quot;DVWA&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196376&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786494&quot;,
+                    &quot;creationTime&quot;: &quot;1661785561&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap FY23 Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: false
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: true,
+            &quot;tcpPortRanges&quot;: [
+                &quot;8000&quot;,
+                &quot;8000&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;8000&quot;,
+                    &quot;to&quot;: &quot;8000&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;clientlessApps&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196383&quot;,
+                    &quot;name&quot;: &quot;bvwa.bdequivre.com&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;certificateId&quot;: &quot;144120298013196374&quot;,
+                    &quot;certificateName&quot;: &quot;Wildcard Cert&quot;,
+                    &quot;applicationPort&quot;: &quot;8000&quot;,
+                    &quot;applicationProtocol&quot;: &quot;HTTP&quot;,
+                    &quot;domain&quot;: &quot;bvwa.bdequivre.com&quot;,
+                    &quot;appId&quot;: &quot;144120298013196377&quot;,
+                    &quot;hidden&quot;: false,
+                    &quot;portal&quot;: false,
+                    &quot;trustUntrustedCert&quot;: false,
+                    &quot;allowOptions&quot;: false,
+                    &quot;cname&quot;: &quot;18821.144120298013196288.h.p.zpa-app.net&quot;
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;ON_ACCESS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;selectConnectorCloseToApp&quot;: false,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;segmentGroupId&quot;: &quot;144120298013196375&quot;,
+            &quot;segmentGroupName&quot;: &quot;Skytap SKOFY23 Segment Group&quot;
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1604046719&quot;,
+            &quot;creationTime&quot;: &quot;1604046687&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196330&quot;,
+            &quot;domainNames&quot;: [
+                &quot;files.bdequivre.com&quot;
+            ],
+            &quot;name&quot;: &quot;File Sharing Segment&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196314&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786484&quot;,
+                    &quot;creationTime&quot;: &quot;1601371961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: true
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: false,
+            &quot;tcpPortRanges&quot;: [
+                &quot;445&quot;,
+                &quot;445&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;445&quot;,
+                    &quot;to&quot;: &quot;445&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;CONTINUOUS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1719310117&quot;,
+            &quot;creationTime&quot;: &quot;1661786042&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196381&quot;,
+            &quot;domainNames&quot;: [
+                &quot;gitlab.bdequivre.com&quot;,
+                &quot;10.0.0.2&quot;
+            ],
+            &quot;name&quot;: &quot;GitLab&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196376&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786494&quot;,
+                    &quot;creationTime&quot;: &quot;1661785561&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap FY23 Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: false
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: true,
+            &quot;tcpPortRanges&quot;: [
+                &quot;8003&quot;,
+                &quot;8003&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;8003&quot;,
+                    &quot;to&quot;: &quot;8003&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;clientlessApps&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196384&quot;,
+                    &quot;name&quot;: &quot;gitlab.bdequivre.com&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;certificateId&quot;: &quot;144120298013196374&quot;,
+                    &quot;certificateName&quot;: &quot;Wildcard Cert&quot;,
+                    &quot;applicationPort&quot;: &quot;8003&quot;,
+                    &quot;applicationProtocol&quot;: &quot;HTTP&quot;,
+                    &quot;domain&quot;: &quot;gitlab.bdequivre.com&quot;,
+                    &quot;appId&quot;: &quot;144120298013196381&quot;,
+                    &quot;path&quot;: &quot;/&quot;,
+                    &quot;hidden&quot;: false,
+                    &quot;portal&quot;: false,
+                    &quot;trustUntrustedCert&quot;: false,
+                    &quot;allowOptions&quot;: false,
+                    &quot;cname&quot;: &quot;18822.144120298013196288.h.p.zpa-app.net&quot;
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;ON_ACCESS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;selectConnectorCloseToApp&quot;: false,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;segmentGroupId&quot;: &quot;144120298013196375&quot;,
+            &quot;segmentGroupName&quot;: &quot;Skytap SKOFY23 Segment Group&quot;
+        },
+        {
+            &quot;creationTime&quot;: &quot;1604047389&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196332&quot;,
+            &quot;domainNames&quot;: [
+                &quot;intranet2.bdequivre.com&quot;
+            ],
+            &quot;name&quot;: &quot;Internal Web Segment restricted&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196314&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786484&quot;,
+                    &quot;creationTime&quot;: &quot;1601371961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: true
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: false,
+            &quot;tcpPortRanges&quot;: [
+                &quot;80&quot;,
+                &quot;80&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;80&quot;,
+                    &quot;to&quot;: &quot;80&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;CONTINUOUS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1604052876&quot;,
+            &quot;creationTime&quot;: &quot;1603967655&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196321&quot;,
+            &quot;domainNames&quot;: [
+                &quot;intranet.bdequivre.com&quot;
+            ],
+            &quot;name&quot;: &quot;Intranet Bdequivre&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196314&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786484&quot;,
+                    &quot;creationTime&quot;: &quot;1601371961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: true
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: false,
+            &quot;tcpPortRanges&quot;: [
+                &quot;80&quot;,
+                &quot;80&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;80&quot;,
+                    &quot;to&quot;: &quot;80&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;clientlessApps&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196322&quot;,
+                    &quot;name&quot;: &quot;intranet.bdequivre.com&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;certificateId&quot;: &quot;144120298013196318&quot;,
+                    &quot;certificateName&quot;: &quot;portal.bdequivre.com&quot;,
+                    &quot;applicationPort&quot;: &quot;80&quot;,
+                    &quot;applicationProtocol&quot;: &quot;HTTP&quot;,
+                    &quot;domain&quot;: &quot;intranet.bdequivre.com&quot;,
+                    &quot;appId&quot;: &quot;144120298013196321&quot;,
+                    &quot;path&quot;: &quot;/&quot;,
+                    &quot;hidden&quot;: false,
+                    &quot;portal&quot;: false,
+                    &quot;trustUntrustedCert&quot;: false,
+                    &quot;allowOptions&quot;: false,
+                    &quot;cname&quot;: &quot;6748.144120298013196288.h.p.zpa-app.net&quot;
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;CONTINUOUS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1661786708&quot;,
+            &quot;creationTime&quot;: &quot;1661785924&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196380&quot;,
+            &quot;domainNames&quot;: [
+                &quot;owncloud.bdequivre.com&quot;,
+                &quot;10.0.0.2&quot;
+            ],
+            &quot;name&quot;: &quot;OwnCloud&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196376&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786494&quot;,
+                    &quot;creationTime&quot;: &quot;1661785561&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap FY23 Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: false
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: true,
+            &quot;tcpPortRanges&quot;: [
+                &quot;8002&quot;,
+                &quot;8002&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;8002&quot;,
+                    &quot;to&quot;: &quot;8002&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;clientlessApps&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196385&quot;,
+                    &quot;name&quot;: &quot;owncloud.bdequivre.com&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;certificateId&quot;: &quot;144120298013196374&quot;,
+                    &quot;certificateName&quot;: &quot;Wildcard Cert&quot;,
+                    &quot;applicationPort&quot;: &quot;8002&quot;,
+                    &quot;applicationProtocol&quot;: &quot;HTTP&quot;,
+                    &quot;domain&quot;: &quot;owncloud.bdequivre.com&quot;,
+                    &quot;appId&quot;: &quot;144120298013196380&quot;,
+                    &quot;hidden&quot;: false,
+                    &quot;portal&quot;: false,
+                    &quot;trustUntrustedCert&quot;: false,
+                    &quot;allowOptions&quot;: false,
+                    &quot;cname&quot;: &quot;18823.144120298013196288.h.p.zpa-app.net&quot;
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;ON_ACCESS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;selectConnectorCloseToApp&quot;: false,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;segmentGroupId&quot;: &quot;144120298013196375&quot;,
+            &quot;segmentGroupName&quot;: &quot;Skytap SKOFY23 Segment Group&quot;
+        },
+        {
+            &quot;creationTime&quot;: &quot;1664268261&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196394&quot;,
+            &quot;id&quot;: &quot;144120298013196401&quot;,
+            &quot;domainNames&quot;: [
+                &quot;sapgui.renault.fr&quot;
+            ],
+            &quot;name&quot;: &quot;SAP GUI&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196314&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786484&quot;,
+                    &quot;creationTime&quot;: &quot;1601371961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: true
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: true,
+            &quot;tcpPortRanges&quot;: [
+                &quot;80&quot;,
+                &quot;80&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;80&quot;,
+                    &quot;to&quot;: &quot;80&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;ON_ACCESS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;selectConnectorCloseToApp&quot;: false,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;segmentGroupId&quot;: &quot;144120298013196375&quot;,
+            &quot;segmentGroupName&quot;: &quot;Skytap SKOFY23 Segment Group&quot;
+        },
+        {
+            &quot;creationTime&quot;: &quot;1604047144&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196331&quot;,
+            &quot;domainNames&quot;: [
+                &quot;sales.bdequivre.com&quot;
+            ],
+            &quot;name&quot;: &quot;SSH Servers Segment&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196314&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786484&quot;,
+                    &quot;creationTime&quot;: &quot;1601371961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: true
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: false,
+            &quot;tcpPortRanges&quot;: [
+                &quot;22&quot;,
+                &quot;22&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;22&quot;,
+                    &quot;to&quot;: &quot;22&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;CONTINUOUS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1661786741&quot;,
+            &quot;creationTime&quot;: &quot;1661785849&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196379&quot;,
+            &quot;domainNames&quot;: [
+                &quot;suitecrm.bdequivre.com&quot;,
+                &quot;10.0.0.2&quot;
+            ],
+            &quot;name&quot;: &quot;SuiteCRM&quot;,
+            &quot;serverGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196376&quot;,
+                    &quot;modifiedTime&quot;: &quot;1661786494&quot;,
+                    &quot;creationTime&quot;: &quot;1661785561&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;Skytap FY23 Server Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+                    &quot;extranetEnabled&quot;: false,
+                    &quot;dynamicDiscovery&quot;: false
+                }
+            ],
+            &quot;enabled&quot;: true,
+            &quot;passiveHealthEnabled&quot;: true,
+            &quot;tcpPortRanges&quot;: [
+                &quot;8001&quot;,
+                &quot;8001&quot;
+            ],
+            &quot;tcpPortRange&quot;: [
+                {
+                    &quot;from&quot;: &quot;8001&quot;,
+                    &quot;to&quot;: &quot;8001&quot;
+                }
+            ],
+            &quot;doubleEncrypt&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;bypassType&quot;: &quot;NEVER&quot;,
+            &quot;healthCheckType&quot;: &quot;DEFAULT&quot;,
+            &quot;icmpAccessType&quot;: &quot;NONE&quot;,
+            &quot;isCnameEnabled&quot;: true,
+            &quot;clientlessApps&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196386&quot;,
+                    &quot;name&quot;: &quot;suitecrm.bdequivre.com&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;certificateId&quot;: &quot;144120298013196374&quot;,
+                    &quot;certificateName&quot;: &quot;Wildcard Cert&quot;,
+                    &quot;applicationPort&quot;: &quot;8001&quot;,
+                    &quot;applicationProtocol&quot;: &quot;HTTP&quot;,
+                    &quot;domain&quot;: &quot;suitecrm.bdequivre.com&quot;,
+                    &quot;appId&quot;: &quot;144120298013196379&quot;,
+                    &quot;hidden&quot;: false,
+                    &quot;portal&quot;: false,
+                    &quot;trustUntrustedCert&quot;: false,
+                    &quot;allowOptions&quot;: false,
+                    &quot;cname&quot;: &quot;18824.144120298013196288.h.p.zpa-app.net&quot;
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;bypassOnReauth&quot;: false,
+            &quot;inspectTrafficWithZia&quot;: false,
+            &quot;healthReporting&quot;: &quot;ON_ACCESS&quot;,
+            &quot;tcpKeepAlive&quot;: &quot;0&quot;,
+            &quot;selectConnectorCloseToApp&quot;: false,
+            &quot;matchStyle&quot;: &quot;EXCLUSIVE&quot;,
+            &quot;isIncompleteDRConfig&quot;: false,
+            &quot;adpEnabled&quot;: false,
+            &quot;autoAppProtectEnabled&quot;: false,
+            &quot;apiProtectionEnabled&quot;: false,
+            &quot;fqdnDnsCheck&quot;: false,
+            &quot;weightedLoadBalancing&quot;: false,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;segmentGroupId&quot;: &quot;144120298013196375&quot;,
+            &quot;segmentGroupName&quot;: &quot;Skytap SKOFY23 Segment Group&quot;
+        }
+    ]
+}
+</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$[&apos;list&apos;].*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$[&apos;id&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;name&apos;]</xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="domain_names">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;domain&gt;.*)$@</regexp>
+                <xpath>$</xpath>
+              </line>
+            </lines>
+            <xpath>$.domainNames.*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="server_groups">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+                <xpath>$.[&apos;name&apos;]</xpath>
+              </line>
+              <line>
+                <regexp>@^(?&lt;id&gt;.*)$@</regexp>
+                <xpath>$.[&apos;id&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.serverGroups.*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="tcp_port_range">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;from&gt;.*)$@</regexp>
+                <xpath>$.[&apos;from&apos;]</xpath>
+              </line>
+              <line>
+                <regexp>@^(?&lt;to&gt;.*)$@</regexp>
+                <xpath>$.[&apos;to&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.tcpPortRange.*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="udp_port_range">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;from&gt;.*)$@</regexp>
+                <xpath>$.[&apos;from&apos;]</xpath>
+              </line>
+              <line>
+                <regexp>@^(?&lt;to&gt;.*)$@</regexp>
+                <xpath>$.[&apos;to&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.udpPortRange.*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;segment_group_name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;segmentGroupName&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;segment_group_id&gt;.*)$@</regexp>
+          <xpath>$.[&apos;segmentGroupId&apos;]</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/application</xpath>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "name": "{$params.name}",
+  "domainNames": [
+   {foreach $params.domain_names as $domain}
+      "{$domain.domain}"{if !$domain@last},{/if}
+   {/foreach}
+  ],
+   "serverGroups": [
+   {foreach $params.server_groups as $servers}
+      {literal}{{/literal}
+      "id": "{$servers.id}",
+      "name": "{$Server_Group.{$servers.id}.name}"
+      {literal}}{/literal}{if !$servers@last},{/if}
+   {/foreach}
+  ],
+  "tcpPortRange": [
+   {foreach $params.tcp_port_range as $tcp}
+      {literal}{{/literal}
+       "from": "{$tcp.from}",
+       "to": "{$tcp.to}"
+      {literal}}{/literal}{if !$tcp@last},{/if}
+   {/foreach}
+  ],
+  "udpPortRange": [
+   {foreach $params.udp_port_range as $udp}
+      {literal}{{/literal}
+       "from": "{$udp.from}",
+       "to": "{$udp.to}"
+      {literal}}{/literal}{if !$udp@last},{/if}
+   {/foreach}
+  ],
+  "segmentGroupName": "{$Segment_Group.{$params.segment_group_id}.name}",
+  "segmentGroupId": "{$params.segment_group_id}"
+{literal}}
+{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/application</xpath>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "name": "{$params.name}",
+  "domainNames": [
+   {foreach $params.domain_names as $domain}
+      "{$domain.domain}"{if !$domain@last},{/if}
+   {/foreach}
+  ],
+   "serverGroups": [
+   {foreach $params.server_groups as $servers}
+      {literal}{{/literal}
+      "id": "{$servers.id}",
+      "name": "{$Server_Group.{$servers.id}.name}"
+      {literal}}{/literal}{if !$servers@last},{/if}
+   {/foreach}
+  ],
+  "tcpPortRange": [
+   {foreach $params.tcp_port_range as $tcp}
+      {literal}{{/literal}
+       "from": "{$tcp.from}",
+       "to": "{$tcp.to}"
+      {literal}}{/literal}{if !$tcp@last},{/if}
+   {/foreach}
+  ],
+  "udpPortRange": [
+   {foreach $params.udp_port_range as $udp}
+      {literal}{{/literal}
+       "from": "{$udp.from}",
+       "to": "{$udp.to}"
+      {literal}}{/literal}{if !$udp@last},{/if}
+   {/foreach}
+  ],
+  "segmentGroupName": "{$Segment_Group.{$params.segment_group_id}.name}",
+  "segmentGroupId": "{$params.segment_group_id}"
+{literal}}
+{/literal}]]></operation>
+    <rest>PUT</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/application/{$params.object_id}</xpath>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <rest>DELETE</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/application/{$params.object_id}</xpath>
+  </command>
+  <command name="LIST"/>
+  <displayName>Application Segments</displayName>
+  <order>0</order>
+</ObjectDefinition>

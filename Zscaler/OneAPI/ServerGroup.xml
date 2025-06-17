@@ -1,0 +1,361 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>name</displayField>
+    <order>2</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>Server Group</name>
+    <group>Zscaler |ZPA</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Enabled" name="params.enabled" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Connector Group" name="params.app_connector_groups.0.id" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="object_id" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>App_Connector_Groups</class>
+      </classes>
+    </variable>
+    <variable displayName="Connector Group Name" name="params.app_connector_groups.0.name" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="name" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>App_Connector_Groups</class>
+      </classes>
+    </variable>
+    <variable displayName="Dynamic Server Discovery" name="params.dynamic_discovery" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="true" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>{
+    &quot;totalPages&quot;: &quot;1&quot;,
+    &quot;totalCount&quot;: &quot;4&quot;,
+    &quot;list&quot;: [
+        {
+            &quot;modifiedTime&quot;: &quot;1749651758&quot;,
+            &quot;creationTime&quot;: &quot;1749651758&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196427&quot;,
+            &quot;id&quot;: &quot;144120298013196430&quot;,
+            &quot;enabled&quot;: true,
+            &quot;name&quot;: &quot;SASEOpsLabServerGroup001&quot;,
+            &quot;applications&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196431&quot;,
+                    &quot;name&quot;: &quot;SASEOpsLabSegment001&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196436&quot;,
+                    &quot;name&quot;: &quot;hgu002&quot;,
+                    &quot;enabled&quot;: true
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;dynamicDiscovery&quot;: true,
+            &quot;appConnectorGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196292&quot;,
+                    &quot;modifiedTime&quot;: &quot;1611094172&quot;,
+                    &quot;creationTime&quot;: &quot;1480663896&quot;,
+                    &quot;modifiedBy&quot;: &quot;72057594037928187&quot;,
+                    &quot;name&quot;: &quot;Skytap connector group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;overrideVersionProfile&quot;: false,
+                    &quot;location&quot;: &quot;Paris, France&quot;,
+                    &quot;dnsQueryType&quot;: &quot;IPV4_IPV6&quot;,
+                    &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+                    &quot;countryCode&quot;: &quot;FR&quot;,
+                    &quot;praEnabled&quot;: true,
+                    &quot;connectorGroupType&quot;: &quot;APP&quot;,
+                    &quot;wafDisabled&quot;: false,
+                    &quot;lssAppConnectorGroup&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1749719128&quot;,
+            &quot;creationTime&quot;: &quot;1749719128&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196427&quot;,
+            &quot;id&quot;: &quot;144120298013196437&quot;,
+            &quot;enabled&quot;: true,
+            &quot;name&quot;: &quot;SASEOpsLabServerGroup002&quot;,
+            &quot;ipAnchored&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;dynamicDiscovery&quot;: true,
+            &quot;appConnectorGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196410&quot;,
+                    &quot;creationTime&quot;: &quot;1682685495&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196407&quot;,
+                    &quot;name&quot;: &quot;Cloudi-Fi - IoT&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;versionProfileId&quot;: &quot;0&quot;,
+                    &quot;overrideVersionProfile&quot;: false,
+                    &quot;location&quot;: &quot;Paris, France&quot;,
+                    &quot;dnsQueryType&quot;: &quot;IPV4&quot;,
+                    &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+                    &quot;countryCode&quot;: &quot;FR&quot;,
+                    &quot;tcpQuickAckApp&quot;: true,
+                    &quot;tcpQuickAckAssistant&quot;: true,
+                    &quot;tcpQuickAckReadAssistant&quot;: true,
+                    &quot;praEnabled&quot;: false,
+                    &quot;useInDrMode&quot;: false,
+                    &quot;connectorGroupType&quot;: &quot;APP&quot;,
+                    &quot;wafDisabled&quot;: false,
+                    &quot;lssAppConnectorGroup&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1661786494&quot;,
+            &quot;creationTime&quot;: &quot;1661785561&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196376&quot;,
+            &quot;enabled&quot;: true,
+            &quot;name&quot;: &quot;Skytap FY23 Server Group&quot;,
+            &quot;applications&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196377&quot;,
+                    &quot;name&quot;: &quot;DVWA&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196379&quot;,
+                    &quot;name&quot;: &quot;SuiteCRM&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196380&quot;,
+                    &quot;name&quot;: &quot;OwnCloud&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196381&quot;,
+                    &quot;name&quot;: &quot;GitLab&quot;,
+                    &quot;enabled&quot;: true
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;extranetEnabled&quot;: false,
+            &quot;servers&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196382&quot;,
+                    &quot;creationTime&quot;: &quot;1661786430&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;SKO Server&quot;,
+                    &quot;address&quot;: &quot;10.0.0.2&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;configSpace&quot;: &quot;DEFAULT&quot;
+                }
+            ],
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;dynamicDiscovery&quot;: false,
+            &quot;appConnectorGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196370&quot;,
+                    &quot;creationTime&quot;: &quot;1661777961&quot;,
+                    &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+                    &quot;name&quot;: &quot;PRA App Connector Group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;versionProfileId&quot;: &quot;0&quot;,
+                    &quot;overrideVersionProfile&quot;: false,
+                    &quot;location&quot;: &quot;Paris, France&quot;,
+                    &quot;dnsQueryType&quot;: &quot;IPV4_IPV6&quot;,
+                    &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+                    &quot;countryCode&quot;: &quot;FR&quot;,
+                    &quot;praEnabled&quot;: true,
+                    &quot;connectorGroupType&quot;: &quot;APP&quot;,
+                    &quot;wafDisabled&quot;: false,
+                    &quot;lssAppConnectorGroup&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;modifiedTime&quot;: &quot;1661786484&quot;,
+            &quot;creationTime&quot;: &quot;1601371961&quot;,
+            &quot;modifiedBy&quot;: &quot;144120298013196289&quot;,
+            &quot;id&quot;: &quot;144120298013196314&quot;,
+            &quot;enabled&quot;: true,
+            &quot;name&quot;: &quot;Skytap Server Group&quot;,
+            &quot;applications&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196401&quot;,
+                    &quot;name&quot;: &quot;SAP GUI&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196321&quot;,
+                    &quot;name&quot;: &quot;Intranet Bdequivre&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196331&quot;,
+                    &quot;name&quot;: &quot;SSH Servers Segment&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196332&quot;,
+                    &quot;name&quot;: &quot;Internal Web Segment restricted&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196315&quot;,
+                    &quot;name&quot;: &quot;bdequivre.com Wildcard&quot;,
+                    &quot;enabled&quot;: true
+                },
+                {
+                    &quot;id&quot;: &quot;144120298013196330&quot;,
+                    &quot;name&quot;: &quot;File Sharing Segment&quot;,
+                    &quot;enabled&quot;: true
+                }
+            ],
+            &quot;ipAnchored&quot;: false,
+            &quot;configSpace&quot;: &quot;DEFAULT&quot;,
+            &quot;extranetEnabled&quot;: false,
+            &quot;readOnly&quot;: false,
+            &quot;zscalerManaged&quot;: false,
+            &quot;microtenantName&quot;: &quot;Default&quot;,
+            &quot;dynamicDiscovery&quot;: true,
+            &quot;appConnectorGroups&quot;: [
+                {
+                    &quot;id&quot;: &quot;144120298013196292&quot;,
+                    &quot;modifiedTime&quot;: &quot;1611094172&quot;,
+                    &quot;creationTime&quot;: &quot;1480663896&quot;,
+                    &quot;modifiedBy&quot;: &quot;72057594037928187&quot;,
+                    &quot;name&quot;: &quot;Skytap connector group&quot;,
+                    &quot;enabled&quot;: true,
+                    &quot;overrideVersionProfile&quot;: false,
+                    &quot;location&quot;: &quot;Paris, France&quot;,
+                    &quot;dnsQueryType&quot;: &quot;IPV4_IPV6&quot;,
+                    &quot;cityCountry&quot;: &quot;Paris, FR&quot;,
+                    &quot;countryCode&quot;: &quot;FR&quot;,
+                    &quot;praEnabled&quot;: true,
+                    &quot;connectorGroupType&quot;: &quot;APP&quot;,
+                    &quot;wafDisabled&quot;: false,
+                    &quot;lssAppConnectorGroup&quot;: false
+                }
+            ]
+        }
+    ]
+}</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$[&apos;list&apos;].*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.[&apos;id&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;name&apos;]</xpath>
+        </line>
+        <line>
+          <array name="app_connector_groups">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+                <xpath>$.[&apos;name&apos;]</xpath>
+              </line>
+              <line>
+                <regexp>@^(?&lt;id&gt;.*)$@</regexp>
+                <xpath>$.[&apos;id&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.appConnectorGroups.*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;dynamic_discovery&gt;.*)$@</regexp>
+          <xpath>$.[&apos;dynamicDiscovery&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;enabled&gt;.*)$@</regexp>
+          <xpath>$.[&apos;enabled&apos;]</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/serverGroup</xpath>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "name": "{$params.name}",
+  "enabled": {$params.enabled}{if !$params.enabled}0{/if}, 
+  "dynamicDiscovery": {$params.dynamic_discovery}{if !$params.dynamic_discovery}0{/if}, 
+  "appConnectorGroups": [
+   {foreach $params.app_connector_groups as $appconngrp}
+      {literal}{{/literal}
+      "id":"{$appconngrp.id}",
+      "name":"{$App_Connector_Groups.{$appconngrp.id}.name}"
+      {literal}}{/literal}{if !$appconngrp@last},{/if}
+   {/foreach}
+  ]
+{literal}}
+{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/serverGroup</xpath>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[{literal}{
+{/literal}
+  "name": "{$params.name}",
+  "enabled": {$params.enabled}{if !$params.enabled}0{/if}, 
+  "dynamicDiscovery": {$params.dynamic_discovery}{if !$params.dynamic_discovery}0{/if}, 
+  "appConnectorGroups": [
+   {foreach $params.app_connector_groups as $appconngrp}
+      {literal}{{/literal}
+      "id":"{$appconngrp.id}",
+      "name":"{$App_Connector_Groups.{$appconngrp.id}.name}"
+      {literal}}{/literal}{if !$appconngrp@last},{/if}
+   {/foreach}
+  ]
+{literal}}
+{/literal}]]></operation>
+    <rest>PUT</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/serverGroup/{$params.object_id}</xpath>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <rest>DELETE</rest>
+    <xpath>/mgmtconfig/v1/admin/customers/{$Customer_Id}/serverGroup/{$params.object_id}</xpath>
+  </command>
+  <command name="LIST"/>
+  <displayName>Server Group</displayName>
+  <order>2</order>
+</ObjectDefinition>
