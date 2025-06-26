@@ -1,0 +1,156 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>2</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>InventoryTunnels</name>
+    <group>zscaler</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>Traffic Forwarding</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Source IP" name="params.source_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Pop Name" name="params.pops.0.pop_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="6" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Pop IP" name="params.pops.0.gateway" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Primary" name="params.pops.0.primary" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="8" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Location" name="params.pops.0.location" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>[
+    {
+        &quot;id&quot;: 4481450,
+        &quot;sourceIp&quot;: &quot;81.1.3.11&quot;,
+        &quot;primaryDestVip&quot;: {
+            &quot;id&quot;: 95035,
+            &quot;virtualIp&quot;: &quot;147.161.178.65&quot;,
+            &quot;privateServiceEdge&quot;: false,
+            &quot;datacenter&quot;: &quot;MRS1&quot;,
+            &quot;latitude&quot;: 43.0,
+            &quot;longitude&quot;: 5.0,
+            &quot;city&quot;: &quot;Marseille&quot;,
+            &quot;countryCode&quot;: &quot;FR  &quot;,
+            &quot;region&quot;: &quot;Europe&quot;
+        },
+        &quot;secondaryDestVip&quot;: {
+            &quot;id&quot;: 62606,
+            &quot;virtualIp&quot;: &quot;165.225.202.22&quot;,
+            &quot;privateServiceEdge&quot;: false,
+            &quot;datacenter&quot;: &quot;MIL3&quot;,
+            &quot;latitude&quot;: 45.0,
+            &quot;longitude&quot;: 9.0,
+            &quot;city&quot;: &quot;Milan&quot;,
+            &quot;countryCode&quot;: &quot;IT  &quot;,
+            &quot;region&quot;: &quot;Europe&quot;
+        },
+        &quot;lastModificationTime&quot;: 1746525195,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 134961959,
+            &quot;name&quot;: &quot;Herve Admin&quot;
+        },
+        &quot;comment&quot;: &quot;SASE OPS LAB Cisco IOS XE EDGE 1 GRE&quot;,
+        &quot;ipUnnumbered&quot;: true
+    }
+]
+</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <post_template>{assign_object_variable 
+	var=&quot;pops.{0}.pop_name&quot; 
+	value=&quot;{$params.primary_dest_vip_datacenter}&quot;}
+{assign_object_variable 
+	var=&quot;pops.{1}.pop_name&quot; 
+	value=&quot;{$params.secondary_dest_vip_datacenter}&quot;}
+	
+{assign_object_variable 
+	var=&quot;pops.{0}.gateway&quot; 
+	value=&quot;{$params.primary_dest_vip_ip}&quot;}
+{assign_object_variable 
+	var=&quot;pops.{1}.gateway&quot; 
+	value=&quot;{$params.secondary_dest_vip_ip}&quot;}
+	
+{assign_object_variable 
+	var=&quot;pops.{0}.primary&quot; 
+	value=&quot;true&quot;}
+{assign_object_variable 
+	var=&quot;pops.{1}.primary&quot; 
+	value=&quot;false&quot;}
+
+{assign_object_variable 
+	var=&quot;pops.{0}.location&quot; 
+	value=&quot;{$params.primary_dest_vip_city}&quot;}
+{assign_object_variable 
+	var=&quot;pops.{1}.location&quot; 
+	value=&quot;{$params.secondary_dest_vip_city}&quot;}</post_template>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$.*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.id</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_datacenter&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.datacenter</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_datacenter&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.datacenter</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_ip&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.virtualIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_ip&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.virtualIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;source_ip&gt;.*)$@</regexp>
+          <xpath>$.sourceIp</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;primary_dest_vip_city&gt;.*)$@</regexp>
+          <xpath>$.primaryDestVip.city</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;secondary_dest_vip_city&gt;.*)$@</regexp>
+          <xpath>$.secondaryDestVip.city</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/zia/api/v1/greTunnels</xpath>
+  </command>
+  <command name="CREATE"/>
+  <command name="READ"/>
+  <command name="UPDATE"/>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE"/>
+  <command name="LIST"/>
+  <displayName>InventoryTunnels</displayName>
+  <order>2</order>
+</ObjectDefinition>
