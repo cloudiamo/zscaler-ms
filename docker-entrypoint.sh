@@ -20,7 +20,7 @@ then
 fi
 cd / || exit 1
 
-if [[ -f /opt/fmc_repository/zscaler-ms/.devops ]]; then
+if [[ -f /opt/fmc_repository/zscaler-ms/.git ]]; then
 	log_info "👾 Skipping upgrade for fellow developer."
 	exit 0
 fi
