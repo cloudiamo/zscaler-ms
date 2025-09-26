@@ -42,11 +42,11 @@
       <lines>
         <line>
           <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
-          <xpath>$.data[0].data[0].vpn_hostname</xpath>
+          <xpath>$.data[*].data[*].vpn_hostname</xpath>
         </line>
         <line>
           <regexp>@^(?&lt;location&gt;.*)$@</regexp>
-          <xpath>$.data[0].data[0].location</xpath>
+          <xpath>$.data[*].data[*].location</xpath>
         </line>
       </lines>
     </parser>
