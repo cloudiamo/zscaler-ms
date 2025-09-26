@@ -37,9 +37,7 @@
     <parser>
       <section>
         <regexp>@^\s \s*$@</regexp>
-        <xpath>$.data[6].body.json.rows[1].cols.*</xpath>
-        <xpath>$.data[6].body.json.rows[2].cols.*</xpath>
-        <xpath>$.data[6].body.json.rows[3].cols.*</xpath>
+        <xpath>$.data[*].body.json.rows[*].cols.*</xpath>
       </section>
       <lines>
         <line>
