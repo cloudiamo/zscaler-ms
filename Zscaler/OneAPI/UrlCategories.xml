@@ -1,0 +1,1783 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>UrlCategories</name>
+    <group>Default</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="object_id" name="params.object_id" startIncrement="1" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="name" name="params.name" startIncrement="0" type="Index" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="isCustomCategory" name="params.isCustomCategory" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="true" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="URL_CATEGORY" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="editable" name="params.editable" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="superCategory" name="params.superCategory" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="USER_DEFINED" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="SPORTS">SPORTS</values>
+        <values displayValue="ANY">ANY</values>
+        <values displayValue="NONE">NONE</values>
+        <values displayValue="USER_DEFINED">USER_DEFINED</values>
+      </values>
+    </variable>
+    <variable displayName="Custom URLs" name="params.dbCategorizedUrls.0.urls" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="URLs Retaining Parent Category" name="params.urls.0.urls" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="keywords" name="params.keywords.0.keywords" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="keywordsRetainingParentCategory" name="params.keywordsRetainingParentCategories.0.keywordsRetainingParentCategory" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="description" name="params.description" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>[
+    {
+        &quot;id&quot;: &quot;OTHER_ADULT_MATERIAL&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 1,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ADULT_THEMES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 2,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;LINGERIE_BIKINI&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 3,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;DEVELOPER_TOOLS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 3075,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;NUDITY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 4,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;PORNOGRAPHY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 5,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SEXUALITY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 6,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ADULT_SEX_EDUCATION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 7,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;K_12_SEX_EDUCATION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 8,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_BUSINESS_AND_ECONOMY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 9,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CORPORATE_MARKETING&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 10,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;FINANCE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 11,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;PROFESSIONAL_SERVICES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 12,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CLASSIFIEDS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 13,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_DRUGS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 14,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_EDUCATION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 15,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CONTINUING_EDUCATION_COLLEGES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 16,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;HISTORY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 17,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;K_12&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 18,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;REFERENCE_SITES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 19,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SCIENCE_AND_TECHNOLOGY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 20,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_ENTERTAINMENT_AND_RECREATION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 21,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ENTERTAINMENT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 22,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;TELEVISION_AND_MOVIES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 23,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;MUSIC&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 24,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;STREAMING_MEDIA&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 25,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;RADIO_STATIONS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 26,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;GAMBLING&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 27,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_GAMES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 28,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_GOVERNMENT_AND_POLITICS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 29,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;GOVERNMENT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 30,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;POLITICS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 31,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;HEALTH&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 32,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_ILLEGAL_OR_QUESTIONABLE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 33,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;COPYRIGHT_INFRINGEMENT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 34,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;COMPUTER_HACKING&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 35,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;QUESTIONABLE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 36,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;PROFANITY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 37,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;MATURE_HUMOR&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 38,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ANONYMIZER&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 39,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_INFORMATION_TECHNOLOGY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 40,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;TRANSLATORS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 41,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;IMAGE_HOST&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 42,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;FILE_HOST&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 43,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SHAREWARE_DOWNLOAD&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 44,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;WEB_BANNERS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 45,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;WEB_HOST&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 46,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;WEB_SEARCH&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 47,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;PORTALS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 48,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SAFE_SEARCH_ENGINE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 49,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_INTERNET_COMMUNICATION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 50,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;INTERNET_SERVICES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 51,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;DISCUSSION_FORUMS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 52,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ONLINE_CHAT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 53,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;EMAIL_HOST&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 54,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;BLOG&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 55,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;JOB_SEARCH&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 56,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;MILITANCY_HATE_AND_EXTREMISM&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 57,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_MISCELLANEOUS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 58,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;NEWS_AND_MEDIA&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 59,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_RELIGION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 60,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;TRADITIONAL_RELIGION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 61,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CULT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 62,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ALT_NEW_AGE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 63,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_SOCIAL_AND_FAMILY_ISSUES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 69,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SOCIAL_ISSUES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 70,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;FAMILY_ISSUES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 71,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_SOCIETY_AND_LIFESTYLE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 72,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ART_CULTURE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 73,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ALTERNATE_LIFESTYLE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 74,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;HOBBIES_AND_LEISURE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 75,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;DINING_AND_RESTAURANT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 76,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ALCOHOL_TOBACCO&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 77,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SOCIAL_NETWORKING&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 78,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_SHOPPING_AND_AUCTIONS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 79,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SPECIALIZED_SHOPPING&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 80,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;REAL_ESTATE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 81,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ONLINE_AUCTIONS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 82,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SPECIAL_INTERESTS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 83,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SPORTS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 84,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;TASTELESS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 85,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;TRAVEL&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 86,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;VEHICLES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 87,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;VIOLENCE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 88,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;WEAPONS_AND_BOMBS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 89,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;USER_DEFINED&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 90,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OTHER_SECURITY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 91,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ADWARE_OR_SPYWARE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 92,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;P2P_COMMUNICATION&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 97,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;MISCELLANEOUS_OR_UNKNOWN&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 98,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SOCIAL_ADULT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 100,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;SOCIAL_NETWORKING_GAMES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 101,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;REMOTE_ACCESS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 104,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;NEWLY_REG_DOMAINS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 106,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CDN&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 107,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;NON_CATEGORIZABLE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 110,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;WEB_CONFERENCING&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 111,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ZSPROXY_IPS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 112,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;ENCR_WEB_CONTENT&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 113,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;OSS_UPDATES&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 114,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;TRADING_BROKARAGE_INSURANCE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 115,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;DNS_OVER_HTTPS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 117,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;MARIJUANA&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 118,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;DYNAMIC_DNS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 119,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;MILITARY&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 120,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;NEWLY_REVIVED_DOMAINS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 121,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;AI_ML_APPS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 122,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;FILE_CONVERTORS&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 124,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;GENERAL_AI_ML&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 125,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;INSURANCE&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [],
+        &quot;customCategory&quot;: false,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 126,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 0,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CUSTOM_01&quot;,
+        &quot;configuredName&quot;: &quot;AllowList-Youtube&quot;,
+        &quot;keywords&quot;: [
+            &quot;WMtIncM0a-w&quot;
+        ],
+        &quot;keywordsRetainingParentCategory&quot;: [],
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [
+            &quot;accounts.youtube.com&quot;,
+            &quot;.youtube.com/s/&quot;,
+            &quot;s.youtube.com&quot;,
+            &quot;.youtube.com/watch?v=WMtIncM0a-w&quot;,
+            &quot;.youtube.com/yts/&quot;,
+            &quot;.ytimg.com&quot;,
+            &quot;.yt3.ggpht.com&quot;,
+            &quot;.googlevideo.com&quot;
+        ],
+        &quot;customCategory&quot;: true,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 128,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 8,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CUSTOM_02&quot;,
+        &quot;configuredName&quot;: &quot;SSL_Whitelist&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [
+            &quot;rts.ch&quot;,
+            &quot;.rts.ch&quot;
+        ],
+        &quot;customCategory&quot;: true,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 129,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 2,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CUSTOM_03&quot;,
+        &quot;configuredName&quot;: &quot;BlackList-Youtube&quot;,
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [
+            &quot;youtubei.googleapis.com&quot;,
+            &quot;suggestqueries.google.com&quot;,
+            &quot;.youtube.com&quot;
+        ],
+        &quot;customCategory&quot;: true,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 130,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 3,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CUSTOM_04&quot;,
+        &quot;configuredName&quot;: &quot;TestOpsLAB&quot;,
+        &quot;urls&quot;: [
+            &quot;TestOps.com&quot;
+        ],
+        &quot;dbCategorizedUrls&quot;: [
+            &quot;TestOps1.com&quot;,
+            &quot;TestUBI.com&quot;
+        ],
+        &quot;customCategory&quot;: true,
+        &quot;editable&quot;: true,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 131,
+        &quot;customUrlsCount&quot;: 1,
+        &quot;urlsRetainingParentCategoryCount&quot;: 2,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CUSTOM_05&quot;,
+        &quot;configuredName&quot;: &quot;Staging_URL_Category_001&quot;,
+        &quot;keywords&quot;: [],
+        &quot;keywordsRetainingParentCategory&quot;: [
+            &quot;ubiqube&quot;,
+            &quot;sase-opslab&quot;
+        ],
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [
+            &quot;www.ubiqube.com&quot;,
+            &quot;www.sase-opslab.com&quot;
+        ],
+        &quot;customCategory&quot;: true,
+        &quot;editable&quot;: true,
+        &quot;description&quot;: &quot;SASE OpsLab&quot;,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 132,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 2,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    },
+    {
+        &quot;id&quot;: &quot;CUSTOM_06&quot;,
+        &quot;configuredName&quot;: &quot;Staging_URL_Category_002&quot;,
+        &quot;keywords&quot;: [],
+        &quot;keywordsRetainingParentCategory&quot;: [
+            &quot;ubiqube&quot;,
+            &quot;sase-opslab&quot;
+        ],
+        &quot;urls&quot;: [],
+        &quot;dbCategorizedUrls&quot;: [
+            &quot;www.ubiqube.com&quot;,
+            &quot;www.sase-opslab.com&quot;
+        ],
+        &quot;customCategory&quot;: true,
+        &quot;editable&quot;: true,
+        &quot;description&quot;: &quot;Retaining Parent Category&quot;,
+        &quot;type&quot;: &quot;URL_CATEGORY&quot;,
+        &quot;val&quot;: 133,
+        &quot;customUrlsCount&quot;: 0,
+        &quot;urlsRetainingParentCategoryCount&quot;: 2,
+        &quot;customIpRangesCount&quot;: 0,
+        &quot;ipRangesRetainingParentCategoryCount&quot;: 0
+    }
+]</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <post_template>{assign_object_variable var=&quot;_order&quot; value={$params.object_id}}</post_template>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$.*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$[&apos;id&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;configuredName&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;isCustomCategory&gt;.*)$@</regexp>
+          <xpath>$.[&apos;customCategory&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;type&gt;.*)$@</regexp>
+          <xpath>$.[&apos;type&apos;]</xpath>
+        </line>
+        <line>
+          <array name="dbCategorizedUrls">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;urls&gt;.*)$@</regexp>
+                <xpath>$.[&apos;dbCategorizedUrls&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;dbCategorizedUrls&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="urls">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;urls&gt;.*)$@</regexp>
+                <xpath>$.[&apos;urls&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;urls&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;description&gt;.*)$@</regexp>
+          <xpath>$.[&apos;description&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;editable&gt;.*)$@</regexp>
+          <xpath>$.[&apos;editable&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;superCategory&gt;.*)$@</regexp>
+          <xpath>$.[&apos;superCategory&apos;]</xpath>
+        </line>
+        <line>
+          <array name="keywords">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;keywords&gt;.*)$@</regexp>
+                <xpath>$.[&apos;keywords&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;keywords&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="keywordsRetainingParentCategories">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;keywordsRetainingParentCategory&gt;.*)$@</regexp>
+                <xpath>$.[&apos;keywordsRetainingParentCategory&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;keywordsRetainingParentCategory&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/zia/api/v1/urlCategories</xpath>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[{literal}{{/literal}
+  "configuredName": "{$params.name}",
+  "superCategory": "{$params.superCategory}",
+  "keywords": [
+  {foreach $params.keywords as $kw}
+   "{$kw.keywords}"{if !$kw@last}, {/if}
+  {/foreach}
+  ],
+  "keywordsRetainingParentCategory": [
+   {foreach $params.keywordsRetainingParentCategories as $krpc}
+    "{$krpc.keywordsRetainingParentCategory}"{if !$krpc@last}, {/if}
+    {/foreach}
+  ],
+  "urls": [
+  {foreach $params.urls as $ul}
+   "{$ul.urls}"{if !$ul@last}, {/if}
+  {/foreach}
+  ],
+  "dbCategorizedUrls": [
+  {foreach $params.dbCategorizedUrls as $dcu}
+  "{$dcu.urls}"{if !$dcu@last}, {/if}
+  {/foreach}
+  ],
+  "customCategory": true,
+  {if $params.editable == "true"}
+  "editable": true,
+  {else}
+  "editable": false,
+  {/if}
+  "description": "{$params.description}",
+  "type": "URL_CATEGORY"
+{literal}}{/literal}]]></operation>
+    <rest>POST</rest>
+    <xpath>/zia/api/v1/urlCategories</xpath>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[{literal}{{/literal}
+  "configuredName": "{$params.name}",
+  "superCategory": "{$params.superCategory}",
+  "keywords": [
+  {foreach $params.keywords as $kw}
+   "{$kw.keywords}"{if !$kw@last}, {/if}
+  {/foreach}
+  ],
+  "keywordsRetainingParentCategory": [
+   {foreach $params.keywordsRetainingParentCategories as $krpc}
+    "{$krpc.keywordsRetainingParentCategory}"{if !$krpc@last}, {/if}
+    {/foreach}
+  ],
+  "urls": [
+  {foreach $params.urls as $ul}
+   "{$ul.urls}"{if !$ul@last}, {/if}
+  {/foreach}
+  ],
+  "dbCategorizedUrls": [
+  {foreach $params.dbCategorizedUrls as $dcu}
+  "{$dcu.urls}"{if !$dcu@last}, {/if}
+  {/foreach}
+  ],
+  "customCategory": true,
+  {if $params.editable == "true"}
+  "editable": true,
+  {else}
+  "editable": false,
+  {/if}
+  "description": "{$params.description}",
+  "type": "URL_CATEGORY"
+{literal}}{/literal}]]></operation>
+    <rest>PUT</rest>
+    <xpath>/zia/api/v1/urlCategories/{$params.object_id}</xpath>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <rest>DELETE</rest>
+    <xpath>/zia/api/v1/urlCategories/{$params.object_id}</xpath>
+  </command>
+  <command name="LIST"/>
+  <displayName>UrlCategories</displayName>
+  <order>0</order>
+</ObjectDefinition>
