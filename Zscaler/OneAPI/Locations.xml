@@ -2,7 +2,7 @@
   <information>
     <icon>none</icon>
     <description></description>
-    <displayField>object_id</displayField>
+    <displayField>name</displayField>
     <order>0</order>
     <visibility/>
     <wfConstraintsPath></wfConstraintsPath>
