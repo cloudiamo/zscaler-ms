@@ -1,0 +1,870 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>json</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>UrlFilteringRules</name>
+    <group>Default</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+  </information>
+  <variables frozen="0">
+    <variable displayName="object_id" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="accessControl" name="params.accessControl" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="excludeSrcCountries" name="params.excludeSrcCountries" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="rank" name="params.rank" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="state" name="params.state" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="blockOverride" name="params.blockOverride" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="order" name="params.order" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="enforceTimeValidity" name="params.enforceTimeValidity" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="cbiProfileId" name="params.cbiProfileId" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="capturePCAP" name="params.capturePCAP" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="browserEunTemplateId" name="params.browserEunTemplateId" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="action" name="params.action" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="predefined" name="params.predefined" startIncrement="0" type="Boolean" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="cbiProfile_profileSeq" name="params.cbiProfile_profileSeq" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="cbiProfile_id" name="params.cbiProfile_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="cbiProfile_name" name="params.cbiProfile_name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="cbiProfile_url" name="params.cbiProfile_url" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="protocol" name="params.protocols.0.protocol" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="urlCategory" name="params.urlCategories.0.urlCategory" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="requestMethod" name="params.requestMethods.0.requestMethod" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="userAgentType" name="params.userAgentTypes.0.userAgentType" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="sourceIpGroup" name="params.sourceIpGroups.0.sourceIpGroup" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="httpHeaderProfile" name="params.httpHeaderProfiles.0.httpHeaderProfile" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="httpHeaderActionProfile" name="params.httpHeaderActionProfiles.0.httpHeaderActionProfile" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>[
+    {
+        &quot;id&quot;: 251241,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;URL RBI&quot;,
+        &quot;order&quot;: 4,
+        &quot;protocols&quot;: [
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;GAMBLING&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;ENABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;blockOverride&quot;: false,
+        &quot;lastModifiedTime&quot;: 1683108642,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 309323,
+            &quot;name&quot;: &quot;admin@bdequivre.zscalertwo.net&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;userAgentTypes&quot;: [
+            &quot;OPERA&quot;,
+            &quot;FIREFOX&quot;,
+            &quot;MSIE&quot;,
+            &quot;MSEDGE&quot;,
+            &quot;CHROME&quot;,
+            &quot;SAFARI&quot;
+        ],
+        &quot;cbiProfile&quot;: {
+            &quot;profileSeq&quot;: 58219002,
+            &quot;id&quot;: &quot;2eef5125-b0f0-4a60-be88-cbfd20c9ca73&quot;,
+            &quot;name&quot;: &quot;Restricted&quot;,
+            &quot;url&quot;: &quot;https://redirect.isolation.zscaler.com/tenant/emea-se/profile/2eef5125-b0f0-4a60-be88-cbfd20c9ca73&quot;
+        },
+        &quot;cbiProfileId&quot;: 58219002,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;ISOLATE&quot;,
+        &quot;predefined&quot;: false
+    },
+    {
+        &quot;id&quot;: 251242,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;URL DENY&quot;,
+        &quot;order&quot;: 5,
+        &quot;protocols&quot;: [
+            &quot;WEBSOCKETSSL_RULE&quot;,
+            &quot;WEBSOCKET_RULE&quot;,
+            &quot;DOHTTPS_RULE&quot;,
+            &quot;TUNNELSSL_RULE&quot;,
+            &quot;HTTP_PROXY&quot;,
+            &quot;FOHTTP_RULE&quot;,
+            &quot;FTP_RULE&quot;,
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;,
+            &quot;SSL_RULE&quot;,
+            &quot;TUNNEL_RULE&quot;
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;OTHER_ADULT_MATERIAL&quot;,
+            &quot;ADULT_THEMES&quot;,
+            &quot;LINGERIE_BIKINI&quot;,
+            &quot;NUDITY&quot;,
+            &quot;PORNOGRAPHY&quot;,
+            &quot;SEXUALITY&quot;,
+            &quot;ADULT_SEX_EDUCATION&quot;,
+            &quot;K_12_SEX_EDUCATION&quot;,
+            &quot;OTHER_DRUGS&quot;,
+            &quot;OTHER_ILLEGAL_OR_QUESTIONABLE&quot;,
+            &quot;COPYRIGHT_INFRINGEMENT&quot;,
+            &quot;COMPUTER_HACKING&quot;,
+            &quot;QUESTIONABLE&quot;,
+            &quot;PROFANITY&quot;,
+            &quot;MATURE_HUMOR&quot;,
+            &quot;ANONYMIZER&quot;,
+            &quot;MILITANCY_HATE_AND_EXTREMISM&quot;,
+            &quot;TASTELESS&quot;,
+            &quot;VIOLENCE&quot;,
+            &quot;WEAPONS_AND_BOMBS&quot;,
+            &quot;OTHER_SECURITY&quot;,
+            &quot;ADWARE_OR_SPYWARE&quot;,
+            &quot;SOCIAL_ADULT&quot;,
+            &quot;ENCR_WEB_CONTENT&quot;,
+            &quot;MARIJUANA&quot;,
+            &quot;DYNAMIC_DNS&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;ENABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;blockOverride&quot;: false,
+        &quot;lastModifiedTime&quot;: 1683108642,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 309323,
+            &quot;name&quot;: &quot;admin@bdequivre.zscalertwo.net&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;cbiProfileId&quot;: 0,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;BLOCK&quot;,
+        &quot;predefined&quot;: false
+    },
+    {
+        &quot;id&quot;: 647686,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;Aiya Block&quot;,
+        &quot;order&quot;: 3,
+        &quot;protocols&quot;: [
+            &quot;WEBSOCKETSSL_RULE&quot;,
+            &quot;WEBSOCKET_RULE&quot;,
+            &quot;DOHTTPS_RULE&quot;,
+            &quot;TUNNELSSL_RULE&quot;,
+            &quot;HTTP_PROXY&quot;,
+            &quot;FOHTTP_RULE&quot;,
+            &quot;FTP_RULE&quot;,
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;,
+            &quot;SSL_RULE&quot;,
+            &quot;TUNNEL_RULE&quot;
+        ],
+        &quot;users&quot;: [
+            {
+                &quot;id&quot;: 58195629,
+                &quot;name&quot;: &quot;Aiya Laptop(aiya_laptop@bdequivre.com)&quot;
+            }
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;OTHER_ADULT_MATERIAL&quot;,
+            &quot;ADULT_THEMES&quot;,
+            &quot;LINGERIE_BIKINI&quot;,
+            &quot;NUDITY&quot;,
+            &quot;PORNOGRAPHY&quot;,
+            &quot;SEXUALITY&quot;,
+            &quot;ADULT_SEX_EDUCATION&quot;,
+            &quot;K_12_SEX_EDUCATION&quot;,
+            &quot;OTHER_DRUGS&quot;,
+            &quot;GAMBLING&quot;,
+            &quot;OTHER_GAMES&quot;,
+            &quot;OTHER_ILLEGAL_OR_QUESTIONABLE&quot;,
+            &quot;COPYRIGHT_INFRINGEMENT&quot;,
+            &quot;COMPUTER_HACKING&quot;,
+            &quot;QUESTIONABLE&quot;,
+            &quot;PROFANITY&quot;,
+            &quot;MATURE_HUMOR&quot;,
+            &quot;ANONYMIZER&quot;,
+            &quot;ONLINE_CHAT&quot;,
+            &quot;MILITANCY_HATE_AND_EXTREMISM&quot;,
+            &quot;OTHER_SOCIAL_AND_FAMILY_ISSUES&quot;,
+            &quot;SOCIAL_ISSUES&quot;,
+            &quot;FAMILY_ISSUES&quot;,
+            &quot;ALCOHOL_TOBACCO&quot;,
+            &quot;SOCIAL_NETWORKING&quot;,
+            &quot;OTHER_SHOPPING_AND_AUCTIONS&quot;,
+            &quot;SPECIALIZED_SHOPPING&quot;,
+            &quot;REAL_ESTATE&quot;,
+            &quot;ONLINE_AUCTIONS&quot;,
+            &quot;TASTELESS&quot;,
+            &quot;VIOLENCE&quot;,
+            &quot;WEAPONS_AND_BOMBS&quot;,
+            &quot;OTHER_SECURITY&quot;,
+            &quot;ADWARE_OR_SPYWARE&quot;,
+            &quot;P2P_COMMUNICATION&quot;,
+            &quot;SOCIAL_ADULT&quot;,
+            &quot;SOCIAL_NETWORKING_GAMES&quot;,
+            &quot;REMOTE_ACCESS&quot;,
+            &quot;ENCR_WEB_CONTENT&quot;,
+            &quot;TRADING_BROKARAGE_INSURANCE&quot;,
+            &quot;MARIJUANA&quot;,
+            &quot;DYNAMIC_DNS&quot;,
+            &quot;MILITARY&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;ENABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;blockOverride&quot;: false,
+        &quot;lastModifiedTime&quot;: 1683108642,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 309323,
+            &quot;name&quot;: &quot;admin@bdequivre.zscalertwo.net&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;cbiProfileId&quot;: 0,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;BLOCK&quot;,
+        &quot;predefined&quot;: false
+    },
+    {
+        &quot;id&quot;: 764686,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;Allow_Youtube&quot;,
+        &quot;order&quot;: 1,
+        &quot;protocols&quot;: [
+            &quot;WEBSOCKETSSL_RULE&quot;,
+            &quot;WEBSOCKET_RULE&quot;,
+            &quot;DOHTTPS_RULE&quot;,
+            &quot;TUNNELSSL_RULE&quot;,
+            &quot;HTTP_PROXY&quot;,
+            &quot;FOHTTP_RULE&quot;,
+            &quot;FTP_RULE&quot;,
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;,
+            &quot;SSL_RULE&quot;,
+            &quot;TUNNEL_RULE&quot;
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;CUSTOM_01&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;ENABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;blockOverride&quot;: false,
+        &quot;lastModifiedTime&quot;: 1683108642,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 309323,
+            &quot;name&quot;: &quot;admin@bdequivre.zscalertwo.net&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;cbiProfileId&quot;: 0,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;ALLOW&quot;,
+        &quot;predefined&quot;: false
+    },
+    {
+        &quot;id&quot;: 764687,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;Block_Youtbue&quot;,
+        &quot;order&quot;: 2,
+        &quot;protocols&quot;: [
+            &quot;WEBSOCKETSSL_RULE&quot;,
+            &quot;WEBSOCKET_RULE&quot;,
+            &quot;DOHTTPS_RULE&quot;,
+            &quot;TUNNELSSL_RULE&quot;,
+            &quot;HTTP_PROXY&quot;,
+            &quot;FOHTTP_RULE&quot;,
+            &quot;FTP_RULE&quot;,
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;,
+            &quot;SSL_RULE&quot;,
+            &quot;TUNNEL_RULE&quot;
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;CUSTOM_03&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;DISABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;blockOverride&quot;: false,
+        &quot;lastModifiedTime&quot;: 1683621071,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 309323,
+            &quot;name&quot;: &quot;admin@bdequivre.zscalertwo.net&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;cbiProfileId&quot;: 0,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;BLOCK&quot;,
+        &quot;predefined&quot;: false
+    },
+    {
+        &quot;id&quot;: 1594731,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;URL_Filtering_1&quot;,
+        &quot;order&quot;: 6,
+        &quot;protocols&quot;: [
+            &quot;WEBSOCKETSSL_RULE&quot;,
+            &quot;WEBSOCKET_RULE&quot;,
+            &quot;DOHTTPS_RULE&quot;,
+            &quot;TUNNELSSL_RULE&quot;,
+            &quot;HTTP_PROXY&quot;,
+            &quot;FOHTTP_RULE&quot;,
+            &quot;FTP_RULE&quot;,
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;,
+            &quot;SSL_RULE&quot;,
+            &quot;TUNNEL_RULE&quot;
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;CUSTOM_04&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;ENABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;blockOverride&quot;: false,
+        &quot;lastModifiedTime&quot;: 1760961588,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 135440871,
+            &quot;name&quot;: &quot;dma@bdequivre.com&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;cbiProfileId&quot;: 0,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;ALLOW&quot;,
+        &quot;predefined&quot;: false
+    },
+    {
+        &quot;id&quot;: 1594735,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;Staging_URLF_001&quot;,
+        &quot;order&quot;: 7,
+        &quot;protocols&quot;: [
+            &quot;WEBSOCKETSSL_RULE&quot;,
+            &quot;WEBSOCKET_RULE&quot;,
+            &quot;DOHTTPS_RULE&quot;,
+            &quot;TUNNELSSL_RULE&quot;,
+            &quot;HTTP_PROXY&quot;,
+            &quot;FOHTTP_RULE&quot;,
+            &quot;FTP_RULE&quot;,
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;,
+            &quot;SSL_RULE&quot;,
+            &quot;TUNNEL_RULE&quot;
+        ],
+        &quot;locations&quot;: [
+            {
+                &quot;id&quot;: 154430814,
+                &quot;name&quot;: &quot;81.1.3.125&quot;
+            },
+            {
+                &quot;id&quot;: 137438025,
+                &quot;name&quot;: &quot;hgulocation001&quot;
+            }
+        ],
+        &quot;groups&quot;: [
+            {
+                &quot;id&quot;: 156277148,
+                &quot;name&quot;: &quot;opslab-users-group&quot;
+            }
+        ],
+        &quot;departments&quot;: [
+            {
+                &quot;id&quot;: 310142,
+                &quot;name&quot;: &quot;France&quot;
+            },
+            {
+                &quot;id&quot;: 1137847,
+                &quot;name&quot;: &quot;UK&quot;
+            }
+        ],
+        &quot;users&quot;: [
+            {
+                &quot;id&quot;: 155912160,
+                &quot;name&quot;: &quot;hgu(hgu@bdequivre.com)&quot;
+            },
+            {
+                &quot;id&quot;: 135440716,
+                &quot;name&quot;: &quot;Pierre(pro@bdequivre.com)&quot;
+            }
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;OTHER_ADULT_MATERIAL&quot;,
+            &quot;ADULT_THEMES&quot;,
+            &quot;LINGERIE_BIKINI&quot;,
+            &quot;NUDITY&quot;,
+            &quot;PORNOGRAPHY&quot;,
+            &quot;SEXUALITY&quot;,
+            &quot;ADULT_SEX_EDUCATION&quot;,
+            &quot;K_12_SEX_EDUCATION&quot;,
+            &quot;OTHER_DRUGS&quot;,
+            &quot;OTHER_ENTERTAINMENT_AND_RECREATION&quot;,
+            &quot;ENTERTAINMENT&quot;,
+            &quot;TELEVISION_AND_MOVIES&quot;,
+            &quot;MUSIC&quot;,
+            &quot;STREAMING_MEDIA&quot;,
+            &quot;RADIO_STATIONS&quot;,
+            &quot;GAMBLING&quot;,
+            &quot;OTHER_GAMES&quot;,
+            &quot;OTHER_ILLEGAL_OR_QUESTIONABLE&quot;,
+            &quot;COPYRIGHT_INFRINGEMENT&quot;,
+            &quot;COMPUTER_HACKING&quot;,
+            &quot;QUESTIONABLE&quot;,
+            &quot;PROFANITY&quot;,
+            &quot;MATURE_HUMOR&quot;,
+            &quot;ANONYMIZER&quot;,
+            &quot;MILITANCY_HATE_AND_EXTREMISM&quot;,
+            &quot;SOCIAL_ADULT&quot;,
+            &quot;SOCIAL_NETWORKING_GAMES&quot;,
+            &quot;MARIJUANA&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;ENABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;endUserNotificationUrl&quot;: &quot;https://www.ubiqube.com&quot;,
+        &quot;blockOverride&quot;: false,
+        &quot;description&quot;: &quot;SASE OpsLab&quot;,
+        &quot;locationGroups&quot;: [
+            {
+                &quot;id&quot;: 135542240,
+                &quot;name&quot;: &quot;SASE OPS LAB&quot;
+            }
+        ],
+        &quot;lastModifiedTime&quot;: 1760962907,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 155912160,
+            &quot;name&quot;: &quot;hgu@bdequivre.com&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;userRiskScoreLevels&quot;: [
+            &quot;HIGH&quot;
+        ],
+        &quot;cbiProfileId&quot;: 0,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;BLOCK&quot;,
+        &quot;predefined&quot;: false
+    },
+    {
+        &quot;id&quot;: 1594758,
+        &quot;accessControl&quot;: &quot;READ_WRITE&quot;,
+        &quot;name&quot;: &quot;Staging_URLF_002&quot;,
+        &quot;order&quot;: 8,
+        &quot;protocols&quot;: [
+            &quot;WEBSOCKETSSL_RULE&quot;,
+            &quot;WEBSOCKET_RULE&quot;,
+            &quot;DOHTTPS_RULE&quot;,
+            &quot;TUNNELSSL_RULE&quot;,
+            &quot;HTTP_PROXY&quot;,
+            &quot;FOHTTP_RULE&quot;,
+            &quot;FTP_RULE&quot;,
+            &quot;HTTPS_RULE&quot;,
+            &quot;HTTP_RULE&quot;,
+            &quot;SSL_RULE&quot;,
+            &quot;TUNNEL_RULE&quot;
+        ],
+        &quot;urlCategories&quot;: [
+            &quot;CUSTOM_05&quot;,
+            &quot;CUSTOM_06&quot;
+        ],
+        &quot;excludeSrcCountries&quot;: false,
+        &quot;state&quot;: &quot;ENABLED&quot;,
+        &quot;rank&quot;: 7,
+        &quot;requestMethods&quot;: [
+            &quot;OPTIONS&quot;,
+            &quot;GET&quot;,
+            &quot;HEAD&quot;,
+            &quot;POST&quot;,
+            &quot;PUT&quot;,
+            &quot;DELETE&quot;,
+            &quot;TRACE&quot;,
+            &quot;CONNECT&quot;,
+            &quot;OTHER&quot;,
+            &quot;PROPFIND&quot;,
+            &quot;PROPPATCH&quot;,
+            &quot;MOVE&quot;,
+            &quot;MKCOL&quot;,
+            &quot;LOCK&quot;,
+            &quot;COPY&quot;,
+            &quot;UNLOCK&quot;,
+            &quot;PATCH&quot;
+        ],
+        &quot;blockOverride&quot;: false,
+        &quot;lastModifiedTime&quot;: 1760966965,
+        &quot;lastModifiedBy&quot;: {
+            &quot;id&quot;: 155912160,
+            &quot;name&quot;: &quot;hgu@bdequivre.com&quot;
+        },
+        &quot;enforceTimeValidity&quot;: false,
+        &quot;cbiProfileId&quot;: 0,
+        &quot;capturePCAP&quot;: false,
+        &quot;sourceIpGroups&quot;: [],
+        &quot;browserEunTemplateId&quot;: 0,
+        &quot;httpHeaderProfiles&quot;: [],
+        &quot;httpHeaderActionProfiles&quot;: [],
+        &quot;action&quot;: &quot;ALLOW&quot;,
+        &quot;predefined&quot;: false
+    }
+]</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[GET]]></operation>
+    <parser>
+      <section>
+        <regexp>@^\s \s*$@</regexp>
+        <xpath>$.*</xpath>
+      </section>
+      <lines>
+        <line>
+          <regexp>@^(?&lt;object_id&gt;.*)$@</regexp>
+          <xpath>$.[&apos;id&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;name&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;accessControl&gt;.*)$@</regexp>
+          <xpath>$.[&apos;accessControl&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;excludeSrcCountries&gt;.*)$@</regexp>
+          <xpath>$.[&apos;excludeSrcCountries&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;rank&gt;.*)$@</regexp>
+          <xpath>$.[&apos;rank&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;state&gt;.*)$@</regexp>
+          <xpath>$.[&apos;state&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;blockOverride&gt;.*)$@</regexp>
+          <xpath>$.[&apos;blockOverride&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;order&gt;.*)$@</regexp>
+          <xpath>$.[&apos;order&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;enforceTimeValidity&gt;.*)$@</regexp>
+          <xpath>$.[&apos;enforceTimeValidity&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;cbiProfileId&gt;.*)$@</regexp>
+          <xpath>$.[&apos;cbiProfileId&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;capturePCAP&gt;.*)$@</regexp>
+          <xpath>$.[&apos;capturePCAP&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;browserEunTemplateId&gt;.*)$@</regexp>
+          <xpath>$.[&apos;browserEunTemplateId&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;action&gt;.*)$@</regexp>
+          <xpath>$.[&apos;action&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;predefined&gt;.*)$@</regexp>
+          <xpath>$.[&apos;predefined&apos;]</xpath>
+        </line>
+        <line>
+          <array name="protocols">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;protocol&gt;.*)$@</regexp>
+                <xpath>$.[&apos;protocols&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;protocols&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="urlCategories">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;urlCategory&gt;.*)$@</regexp>
+                <xpath>$.[&apos;urlCategories&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;urlCategories&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="requestMethods">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;requestMethod&gt;.*)$@</regexp>
+                <xpath>$.[&apos;requestMethods&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;requestMethods&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="userAgentTypes">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;userAgentType&gt;.*)$@</regexp>
+                <xpath>$.[&apos;userAgentTypes&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;userAgentTypes&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="sourceIpGroups">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;sourceIpGroup&gt;.*)$@</regexp>
+                <xpath>$.[&apos;sourceIpGroups&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;sourceIpGroups&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="httpHeaderProfiles">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;httpHeaderProfile&gt;.*)$@</regexp>
+                <xpath>$.[&apos;httpHeaderProfiles&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;httpHeaderProfiles&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="httpHeaderActionProfiles">
+            <lines>
+              <line>
+                <regexp>@^(?&lt;httpHeaderActionProfile&gt;.*)$@</regexp>
+                <xpath>$.[&apos;httpHeaderActionProfiles&apos;]</xpath>
+              </line>
+            </lines>
+            <xpath>$.[&apos;httpHeaderActionProfiles&apos;].*</xpath>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;cbiProfile_profileSeq&gt;.*)$@</regexp>
+          <xpath>$.[&apos;cbiProfile&apos;][&apos;profileSeq&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;cbiProfile_id&gt;.*)$@</regexp>
+          <xpath>$.[&apos;cbiProfile&apos;][&apos;id&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;cbiProfile_name&gt;.*)$@</regexp>
+          <xpath>$.[&apos;cbiProfile&apos;][&apos;name&apos;]</xpath>
+        </line>
+        <line>
+          <regexp>@^(?&lt;cbiProfile_url&gt;.*)$@</regexp>
+          <xpath>$.[&apos;cbiProfile&apos;][&apos;url&apos;]</xpath>
+        </line>
+      </lines>
+    </parser>
+    <xpath>/zia/api/v1/urlFilteringRules</xpath>
+  </command>
+  <command name="CREATE"/>
+  <command name="READ"/>
+  <command name="UPDATE"/>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <rest>DELETE</rest>
+    <xpath>/zia/api/v1/urlFilteringRules/{$params.object_id}</xpath>
+  </command>
+  <command name="LIST"/>
+  <displayName>UrlFilteringRules</displayName>
+  <order>0</order>
+</ObjectDefinition>
