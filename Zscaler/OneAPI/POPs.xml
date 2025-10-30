@@ -2,7 +2,7 @@
   <information>
     <icon>none</icon>
     <description></description>
-    <displayField>location</displayField>
+    <displayField>location_detail</displayField>
     <order>0</order>
     <visibility/>
     <wfConstraintsPath></wfConstraintsPath>
@@ -31,11 +31,12 @@
   <variables frozen="0">
     <variable displayName="object_id" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
     <variable displayName="location" name="params.location" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="location detail" name="params.location_detail" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example/>
   <command name="IMPORT">
     <operation><![CDATA[GET]]></operation>
-    <post_template>
+    <post_template>{assign_object_variable var=&quot;location_detail&quot; value=&quot;`$params.location` - `$params.object_id`&quot;}
 </post_template>
     <parser>
       <section>
@@ -53,7 +54,7 @@
         </line>
       </lines>
     </parser>
-    <xpath>/api/getdata/zscalertwo.net/all/cenr?site=config.zscaler.com</xpath>
+    <xpath>/api/getdata/zscalertwo.net/all/cenr?site=config.zscaler.com##/api/getdata/zscalerone.net/all/cenr?site=config.zscaler.com##/api/getdata/zscalerthree.net/all/cenr?site=config.zscaler.com##/api/getdata/zscaler.net/all/cenr?site=config.zscaler.com##/api/getdata/zscloud.net/all/cenr?site=config.zscaler.com</xpath>
   </command>
   <command name="CREATE"/>
   <command name="READ"/>
