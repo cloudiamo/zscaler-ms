@@ -1,7 +1,7 @@
 <ObjectDefinition>
   <information>
     <icon>none</icon>
-    <description></description>
+    <description>The /zia/api/v1/urlFilteringRules API endpoint is used to create, retrieve, update, and manage URL Filtering Policy Rules in Zscaler Internet Access (ZIA). These are the actual policy rules that determine how ZIA enforces URL access for users, groups, departments, and locations.</description>
     <displayField>object_id</displayField>
     <order>0</order>
     <visibility/>
